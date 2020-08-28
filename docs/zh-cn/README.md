@@ -1,3 +1,7 @@
-# Headline
+### HOP
 
-> HOP a open and decentrilized VPN project.
+> 去中心化，开放式的VPN协议.
+
+HOP使用区块链技术加密并且结合了微支付技术，让数据传输安全且，让支付匿名化.
+
+

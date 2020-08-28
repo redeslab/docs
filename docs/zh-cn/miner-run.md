@@ -1,15 +1,15 @@
 
-### Running Miner <!-- {docsify-ignore} -->
+### 运行矿机 <!-- {docsify-ignore} -->
 
-!>**Open 3000-65535 TCP,UDP**
+!>**打开3000以上的TCP和UDP端口**
 
-+ Warning up Miner
++ 启动矿机
 
 ```console
 $ HOP
 ```
 
-Output:
+命令行提示:
 
 ```console
 >>>07-14/02:06:00 micChain.go:55       newChain             [NOTI] Sync miner data: 
@@ -21,7 +21,7 @@ Output:
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
-+ Output from Pool.log
++ 矿池服务器Pool.log日志的提示:
 
 ```console
 >>>07-14/02:06:00 receipt.go:109       createMinerRcpWire   [NOTI] New Miner online:
@@ -32,25 +32,25 @@ PoolAddr:       0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54
 -----------------~~__-__-_-_-___--___-___~~------------------
 ```
 
-+ Stop Miner(We will restart Miner in next step with nohup command):
++ 停止运行矿机（下一步会使用nohup命令重启矿机）:
 
 ```
 CTRL+C 
 ```
 
-+ Running Miner with nohup:
++ 使用nohup启动矿机:
 
 ```console
 $ nohup HOP -p 321 2>hop.log &
 ```
 
-+ Check Miner thread is running properly:
++ 确认矿机运行正常:
 
 ```console
 $ ps -ef|grep HOP
 ```
 
-Output:
+确认命令行提示HOP已经在运行:
 
 ```console
 hyperor+ 14763 14586  0 03:41 pts/0    00:00:00 grep --color=auto HOP

@@ -1,23 +1,22 @@
 
-### Running Pool <!-- {docsify-ignore} -->
+### 运行矿池 <!-- {docsify-ignore} -->
 
-+ Turn off Firewall:
++ 关闭防火墙:
 
 ```console
 systemctl stop firewalld.service 
 systemctl disable firewalld.service
 ```
 
-!>**Open 3000-65535 TCP,UDP**
+!>**打开3000以上的TCP和UDP端口**
 
-
-+ Start Pool
++ 开启矿池
 
 ```console
 $ Pool 
 ```
 
-Ropsten Test Network
+Ropsten测试网络
 
 ```console
 $ Pool -d
@@ -54,31 +53,31 @@ log init success
 >>>05-08/03:18:22 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:24 local:23
 ```
 
-+ Stop Pool(We will restart Pool in next step with nohup command):
++ 关闭矿池（下一步会使用nohup命令重启矿池）:
 
 ```
 CTRL+C 
 ```
 
-+ Restart Pool with nohup command:
++ 使用nohup命令重启矿池，并且把日志写入pool.log文件:
 
 ```console
 $ nohup Pool -p 123 2>pool.log &
 ```
 
-Ropsten Test Network
+Ropsten测试网络
 
 ```console
 $ nohup Pool -d -p 123 2>pool.log &
 ```
 
-+ Make sure the Pool is running
++ 确认矿池运行正常:
 
 ```console
 $ ps -ef|grep Pool
 ```
 
-Output:
+确认命令行提示Pool已经在运行:
 
 ```
 hyperor+  9470  9437  0 23:07 pts/0    00:00:00 grep --color=auto Pool

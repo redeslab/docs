@@ -1,6 +1,6 @@
 ### Installation
 
-Upload the excutable file to a remote CentOS server
+Upload the executable file to a remote CentOS server
 
 ```console
 $ scp Pool root@yourserverip:/root/pool

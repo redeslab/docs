@@ -27,6 +27,13 @@ $ scp Pool root@yourserverip:/root/pool
 $ scp HOP root@yourserverip:/root/hop
 ```
 
+### Get Ropsten HOP Tokens
+
+During the Beta testing period, each Pool requests a deposit of 200K HOP tokens from Ropsten testnet. Each Miner will request 1000 HOP tokens from the Pool, so 200K HOP tokens can have 100 Miners.
+
+Please send your Ropsten wallet address along with your Pool IP address to hyperorchidcs@gmail.com to request the deposit token for Pool.
+
+
 ### Use cases
 
 + Watch Netflix in different countries.

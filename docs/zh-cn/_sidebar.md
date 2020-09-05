@@ -15,3 +15,5 @@
 - **命令和选项**
   - [矿池](/zh-cn/pool-command-option)
   - [矿机](/zh-cn/miner-command-option)
+- **第三方Dapps**
+  - [Pirate](/zh-cn/pirate-dapp)

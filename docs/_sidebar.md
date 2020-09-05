@@ -7,6 +7,8 @@
   - [Registration](/pool-registration)
   - [Running](/pool-run)
   - [Claim HOP Token](/pool-claim)
+  - [Remove Miner](/pool-unjoin)
+  - [Pool Unregistration](/pool-unreg)
 - **Miner Configuration** 
   - [Initiation](/miner-initiation)
   - [Bas configuration](/miner-bas-configuration)
@@ -15,3 +17,5 @@
 - **Command and Option**
   - [Pool](/pool-command-option)
   - [Miner](/miner-command-option)
+- **Awesome Dapps**
+  - [Pirate](/pirate-dapp)

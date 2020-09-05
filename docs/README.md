@@ -1,6 +1,6 @@
 ### HOP
 
-!>**HOP will open the first round of beta testing opportunities for mining Pool and Miner nodes on September 7, 2020, 8:00 a.m. US Eastern Time, the executable will release at the same time. Please request your Ropsten testnet HOP Token ahead by send email to hyperorchidcs@gmail.com**
+!>**HOP will open the first round of beta testing opportunities for mining Pool and Miner nodes on September 7, 2020, 8:00 a.m. US Eastern Time, the executable Pool and Miner will release at the same time. Please request your Ropsten testnet HOP Token ahead by send email to hyperorchidcs@gmail.com**
 
 > A open and decentrilized VPN protocol.
 

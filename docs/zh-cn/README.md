@@ -1,11 +1,21 @@
 ### HOP
 
-!> HOP将于美东时间9月7日上午8点开放矿池和矿机的第一轮测试，届时矿机和矿池软件也会同步放出，请发邮件到 **hyperorchidcs@gmail.com** 提前申请测试需要的测试币。
+!> HOP已于美东时间9月7日上午8点开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **hyperorchidcs@gmail.com** 提前申请测试需要的测试币。
 
 > 去中心化，开放式的VPN协议.
 
 HOP使用区块链技术加密并且结合了微支付技术，让数据传输安全且，让支付匿名化.
 
+### 下载 Pool and Miner
+
+!> HOP for x64
+矿机文件  [Pool_amd64](_media/Pool_amd64 ':include')
+矿池文件  [HOP_amd64](_media/HOP_amd64 ':include')
+
+
+!> HOP for ARM
+矿机文件  [Pool_arm64](_media/Pool_arm64 ':include')
+矿池文件  [HOP_arm64](_media/HOP_arm64 ':include')
 
 ### Dapps
 

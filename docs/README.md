@@ -1,12 +1,23 @@
 ### HOP
 
-!> HOP will open the first round of beta testing opportunities for mining Pool and Miner nodes on September 7, 2020, 8:00 a.m. US Eastern Time, the executable Pool and Miner will release at the same time. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
+!> HOP is now open the first round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
 
 > A open and decentrilized VPN protocol.
 
 HOP is build on Ethereum network, it uses the micro-payment system to run the pool and miners as well as the payment interface between VPN users and the pools. 
 
 We provide simple executable Pool and Miner files that's highly stable.
+
+### Download Pool and Miner
+
+!> HOP for x64
+[Pool_amd64](_media/Pool_amd64 ':include')
+[HOP_amd64](_media/HOP_amd64 ':include')
+
+
+!> HOP for ARM
+[Pool_arm64](_media/Pool_arm64 ':include')
+[HOP_arm64](_media/HOP_arm64 ':include')
 
 ### Dapps Example
 

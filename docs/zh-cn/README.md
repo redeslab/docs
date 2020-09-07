@@ -9,13 +9,13 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 ### 下载 Pool and Miner
 
 !> HOP for x64
-矿机文件  [Pool_amd64.zip](_media/Pool_amd64.zip ':include')
-矿池文件  [HOP_amd64.zip](_media/HOP_amd64.zip ':include')
+矿机文件  [Pool_amd64](_media/Pool_amd64.zip ':ignore')
+矿池文件  [HOP_amd64](_media/HOP_amd64.zip ':ignore')
 
 
 !> HOP for ARM
-矿机文件  [Pool_arm64.zip](_media/Pool_arm64.zip ':include')
-矿池文件  [HOP_arm64.zip](_media/HOP_arm64.zip ':include')
+矿机文件  [Pool_arm64](_media/Pool_arm64 ':ignore')
+矿池文件  [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 ### Dapps
 

@@ -12,14 +12,14 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 + HOP for x64
 
-[Pool_amd64](_media/Pool_amd64 ':include')
-[HOP_amd64](_media/HOP_amd64 ':include')
+[Pool_amd64](_media/Pool_amd64.zip ':include')
+[HOP_amd64](_media/HOP_amd64.zip ':include')
 
 
 + HOP for ARM
 
-[Pool_arm64](_media/Pool_arm64 ':include')
-[HOP_arm64](_media/HOP_arm64 ':include')
+[Pool_arm64](_media/Pool_arm64.zip ':include')
+[HOP_arm64](_media/HOP_arm64.zip ':include')
 
 ### Dapps Example
 

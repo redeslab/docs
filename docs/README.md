@@ -10,12 +10,14 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 ### Download Pool and Miner
 
-!> HOP for x64
++ HOP for x64
+
 [Pool_amd64](_media/Pool_amd64 ':include')
 [HOP_amd64](_media/HOP_amd64 ':include')
 
 
-!> HOP for ARM
++ HOP for ARM
+
 [Pool_arm64](_media/Pool_arm64 ':include')
 [HOP_arm64](_media/HOP_arm64 ':include')
 

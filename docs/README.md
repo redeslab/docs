@@ -16,6 +16,7 @@ We provide simple executable Pool and Miner files that's highly stable.
 [HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
+
 + HOP for ARM
 
 [Pool_arm64](_media/Pool_arm64 ':ignore')

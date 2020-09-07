@@ -63,12 +63,15 @@ Please send your Ropsten wallet address along with your Pool IP address to hyper
 
 HOP is a anonymous VPN protocol its build-in micro-payment system provide real time payment method for VPN user through HOP ERC-20 Token.
 
+
+### Telegram
+?> Find us on Telegram *[@hyperorchid ](https://t.me/hopcommunity)*
 ### Twitter
-?> Follow me on twitter (or post a tweet and tag me) *[@hyperorchid ](https://twitter.com/hyperorchid)*
+?> Follow us on twitter (or post a tweet and tag me) *[@hyperorchid ](https://twitter.com/hyperorchid)*
 ### GitHub
-?> Find me on GitHub *[@hyperorchidlab ](https://github.com/hyperorchidlab/)*
+?> Find us on GitHub *[@hyperorchidlab ](https://github.com/hyperorchidlab/)*
 ### Reddit
-?> Find me on Reddit *[r/HOPVPN ](https://www.reddit.com/r/HOPVPN/)*
+?> Find us on Reddit *[r/HOPVPN ](https://www.reddit.com/r/HOPVPN/)*
 
 
 ## Creator

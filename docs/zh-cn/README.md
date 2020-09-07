@@ -59,6 +59,8 @@ $ scp HOP root@yourserverip:/root/hop
 
 HOP是一种匿名VPN协议，其内置的小额支付系统通过HOP ERC-20 Token为VPN用户提供实时支付。
 
+### Telegram
+?> 加入我们的电报群 *[@hyperorchid ](https://t.me/hopcommunity)*
 ### Twitter
 ?> 关注我们的推特 *[@hyperorchid ](https://twitter.com/hyperorchid)*
 ### GitHub

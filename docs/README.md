@@ -12,6 +12,7 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 + HOP for x64
 
+
 [Pool_amd64](_media/Pool_amd64 ':ignore')
 
 [HOP_amd64](_media/HOP_amd64 ':ignore')
@@ -49,9 +50,11 @@ $ scp HOP root@yourserverip:/root/hop
 
 ### Get Ropsten HOP Tokens
 
-During the Beta testing period, each Pool requests a deposit of 200K HOP tokens from Ropsten testnet. Each Miner will request 1000 HOP tokens from the Pool, so 200K HOP tokens can have 100 Miners.
+During the Beta testing period, each Pool requests a deposit of 200K HOP tokens from Ropsten testnet. Each Miner will request 2000 HOP tokens from the Pool, so 200K HOP tokens can have 100 Miners.
 
 Please send your Ropsten wallet address along with your Pool IP address to hyperorchidcs@gmail.com to request the deposit token for Pool.
+
+Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/docs/appendix/ropsten-setup
 
 
 ### Use cases

@@ -15,7 +15,7 @@ HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx
 >0x992beCAaFA3A50A6C160624C664D3Ac792e3B4fC is your Miner wallet address, HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx is your Miner id.
 
 
-#### - Open your Pool Console
+#### - Open Your Pool Console
 
 + Join Miner to a Pool
 

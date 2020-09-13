@@ -18,7 +18,7 @@ $ ifconfig
 + 在BAS网络里注册你的矿池, 我们使用之前设置的123做为密码:
 
 ```console
-$ Pool bas -i YOURIPADDRESS -p 123
+$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
 ```
 
 + 查看设置成功的命令行提示:

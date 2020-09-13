@@ -122,7 +122,7 @@ $ ifconfig
 + Register your Pool with BAS network, we use the 123 as password we create earlier:
 
 ```console
-$ Pool bas -i YOURIPADDRESS -p 123
+$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
 ```
 
 + Type your password and check success output from console:
@@ -424,3 +424,240 @@ Save the file and load the new $PATH into the current shell session using the so
 ```console
 $ source ~/.bashrc
 ```
+
+### Miner BAS Configuration
+
++ This step is to connect the Miner with BAS network in order to have HOP protocol regonize the new Miner:
+
+```console
+$ sudo apt-get update -y
+```
+
+```console
+$ sudo apt-get install -y net-tools
+```
+
++ HOP Miner Init:
+
+```console
+$ HOP init
+```
+
++ Open Miner settings:
+
+```console
+$ vi ~/.hop/conf.hop
+```
+
++ Change the settings as following:
+
+```
+{
+        "BAS": "34.96.151.222",
+        "id": 3,
+        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
+        "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
+}
+```
+
+!>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Test network**
+
+
++ Find your public IP address:
+
+```console
+$ ifconfig
+```
+
++ Register your Miner with BAS network, we use the 321 as password we create earlier:
+
+```console
+$ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
+```
+
++ Check console output:
+
+```
+45.77.5.223 16
+HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3 46
+reg success!
+```
+
+### Join a Pool
+
++ Find your Miner wallet address
+
+```console
+$ HOP show address
+
+0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5
+HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
+0x6863a62305800a1e5b6bbc4fc9549ea204786e534010cea4780d11ed0187d0b8
+```
+
+>0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5 is your Miner wallet address, HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo is your Miner id.
+
+
+#### - Open Your Pool Console
+
++ Join Miner to a Pool
+
+```console
+$ Pool eth join -d -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -z "US_San1" -p 123
+```
+
+Output
+
+```
+conf init success
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++PoolVersion:   0.1.0+
++DebugMode:     true+
++LogLevel:      INFO+
++Token:
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++NetworkID:     3+
++EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+log init success
+Approving ......
+0x1b182e1456462ac5cfce062dc335d53bd0a5050d1c71f43d698d0164b021c9b6
+
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Tx is in process: not found
+Approve success......
+Joining pool......
+join success
+0x8c3e14ce536bebc2ce5b3c98faff44d199878ffbde27f20d678a37b516bb6439
+```
+
+!>**Wait untill the "join success" appeared and check the Pool with**
+
++ Check pool.log
+
+```console
+$ tail -f pool.log
+```
+
+  Output:
+```console
+>>>09-13/03:08:44 mchain.go:150        Syncing              [NOTI] Miner data start to sync:sys:90 local:89
+
+>>>09-13/03:08:44 miner.go:30          updateMinerData      [NOTI] update local miner data by :
+@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
+@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
+@@SubAddr       HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
+@@GTN           50000000000000000000000
+@@Zone          US
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+```
+
+### Running Miner
+
+!>**Open 3000-65535 TCP,UDP**
+
++ Warning up Miner
+
+```console
+$ HOP
+```
+
+Output:
+
+```console
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++WalletPath:    /root/.hop/wallet.json+
++DBPath:        /root/.hop/Receipts+
++LogPath:       /root/.hop/log.hop+
++PidPath:       /root/.hop/pid.hop+
++ConfPath:      /root/.hop/conf.hop+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++NetworkID:     3+
++EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Password=>
+log init success
+
+>>>09-13/04:36:54 micChain.go:55       newChain             [NOTI] Sync miner data:
+@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
+@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
+@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
+@@GTN           50000000000000000000000
+@@Zone          US
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>>>>>>>>miner start at pid(2692)<<<<<<<<<<
+```
+
++ Output from Pool.log
+
+```console
+>>>09-13/04:35:08 miner.go:30          updateMinerData      [NOTI] update local miner data by :
+@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
+@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
+@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
+@@GTN           50000000000000000000000
+@@Zone          US
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+>>>09-13/04:36:49 mchain.go:234        newRcpReader         [DEBU] RCP Keep Alive : 0xb19b231Ea69B5A2113F09Ad9AAEa0A471272140b 187.252.197.14:51569
+
+>>>09-13/04:36:54 receipt.go:80        createMinerRcpWire   [NOTI] New Miner online:
+----------------------ReceiptQuery-----------------------
+Typ:    1
+UserAddr:       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
+PoolAddr:       0xa353A767087D9aCab17c3fD941eeD29e166A9982
+-----------------~~__-__-_-_-___--___-___~~------------------
+```
+
++ Stop Miner(We will restart Miner in next step with nohup command):
+
+```
+CTRL+C 
+```
+
++ Running Miner with nohup:
+
+```console
+$ nohup HOP -p 321 2>hop.log &
+```
+
++ Check Miner thread is running properly:
+
+```console
+$ ps -ef|grep HOP
+```
+
+Output:
+
+```console
+root        2702    2681 23 04:41 pts/2    00:00:01 HOP -p 321
+root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
+```
+
++ To make sure which TCP and UDP ports Miner are using please use following command and open the ports that Miner needed:
+
+```console
+$ netstat -tulpn | grep LISTEN
+```
+
+> Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.

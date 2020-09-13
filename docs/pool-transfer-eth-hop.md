@@ -1,4 +1,4 @@
-### - Transfer ETH and HOP
+### Transfer ETH and HOP
 
 + Check ETH and HOP Blance
 
@@ -28,7 +28,7 @@ eth balance:-> 0
 contract approved:-> 0
 ```
 
-!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54(The minimum HOP balance to run the Pool is 3500)**
+!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54**
 
 
 + Use Ropsten Test Network instead of ETH Mainnet

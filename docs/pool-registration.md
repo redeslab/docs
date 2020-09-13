@@ -1,5 +1,8 @@
 ### Pool Registration <!-- {docsify-ignore} -->
 
+!> Please transfer **sufficient HOP and ETH Tokens** into your Pool wallet in order to continue this step.
+
+
 ```Usage:
 Pool eth reg [flags]
 

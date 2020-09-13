@@ -4,6 +4,7 @@
 - **矿池设置**
   - [初始化](/zh-cn/pool-initiation)
   - [Bas设置](/zh-cn/pool-bas-configuration)
+  - [转入足够的Token](/zh-cn/pool-transfer-eth-hop)
   - [注册矿池](/zh-cn/pool-registration)
   - [运行矿池](/zh-cn/pool-run)
   - [矿池提现HOP](/zh-cn/pool-claim)

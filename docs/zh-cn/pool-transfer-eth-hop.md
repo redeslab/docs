@@ -1,6 +1,6 @@
-### - Transfer ETH and HOP
+### - 转入ETH和HOP
 
-+ Check ETH and HOP Blance
++ 查看ETH和HOP的账户余额
 
 
 ```console
@@ -28,25 +28,25 @@ eth balance:-> 0
 contract approved:-> 0
 ```
 
-!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54(The minimum HOP balance to run the Pool is 3500)**
+!>**转入足够的ETH和HOP到你的矿池钱包地址，这个示例里面的钱包地址是0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54**
 
 
-+ Use Ropsten Test Network instead of ETH Mainnet
++ 使用Ropsten测试网
 
-Ropsten is a public testnet for Ethereum that uses PoW (Proof of Work).
-Useful Links
+Ropsten是以太坊的一个测试网之一使用的POW挖矿(Proof of Work).
+常用地址
 
     Block explorer: https://ropsten.etherscan.io/
     GitHub: https://github.com/ethereum/ropsten
 
-#### Get Free Ropsten ETH from:
+#### 获得免费的Ropsten以太坊:
 
 + http://faucet.ropsten.be:3001/
 + https://faucet.kyber.network/
 + https://faucet.metamask.io/
 + https://ipfs.io/ipfs/QmVAwVKys271P5EQyEfVSxm7BJDKWt42A2gHvNmxLjZMps/
 
-#### Get Free Ropsten HOP from Dapp Private VPN
+#### 从Pirate程序中获得免费的Ropsten HOP代币
 
 >iOS    <a href="https://apps.apple.com/us/app/id1521121265" title="PirateVPN">PirateVPN</a>
 

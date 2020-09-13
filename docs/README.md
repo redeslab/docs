@@ -44,8 +44,20 @@ To install the executable Pool and Miner
 $ scp Pool root@yourserverip:/root/pool
 ```
 
+OR
+
+```console
+$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+```
+
 ```console
 $ scp HOP root@yourserverip:/root/hop
+```
+
+OR
+
+```console
+$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 ### Get Ropsten HOP Tokens

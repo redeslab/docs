@@ -42,8 +42,20 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 $ scp Pool root@yourserverip:/root/pool
 ```
 
+或者
+
+```console
+$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+```
+
 ```console
 $ scp HOP root@yourserverip:/root/hop
+```
+
+或者
+
+```console
+$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 ### Get Ropsten HOP Tokens

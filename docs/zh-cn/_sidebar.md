@@ -13,6 +13,8 @@
   - [Bas设置](/zh-cn/miner-bas-configuration)
   - [加入一个矿池](/zh-cn/miner-join-a-pool)
   - [运行矿机](/zh-cn/miner-run)
+- **Ropsten测试网 - Ubuntu** 
+  - [Ubuntu 20.04](/zh-cn/ubuntu)
 - **命令和选项**
   - [矿池](/zh-cn/pool-command-option)
   - [矿机](/zh-cn/miner-command-option)

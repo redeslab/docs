@@ -2,6 +2,8 @@
 
 !> HOP已开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **hyperorchidcs@gmail.com** 提前申请测试需要的测试币。
 
+HOP Ropsten测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Ropsten钱包地址https://openattestation.com/docs/appendix/ropsten-setup
+
 > 去中心化，开放式的VPN协议.
 
 HOP使用区块链技术加密并且结合了微支付技术，让数据传输安全且，让支付匿名化.

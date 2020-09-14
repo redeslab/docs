@@ -21,6 +21,16 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 
 矿池文件  [HOP_arm64](_media/HOP_arm64 ':ignore')
 
+### 下载BAS网络工具
+
++ HOP for x64
+
+
+[BAS MacOS](_media/bas ':ignore')
+
+[BAS Windows](_media/bas.exe ':ignore')
+
+
 ### Dapps
 
 

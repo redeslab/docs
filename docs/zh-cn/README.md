@@ -108,7 +108,7 @@ $ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 
 ### Get Ropsten HOP Tokens
 
-在Beta测试期间，每个矿池都能申请Ropsten测试网的20万HOP的抵押。 每个矿工将从池中请求2000个HOP，因此20万 HOP可以拥有100个矿工。
+在Beta测试期间，每个矿池都能申请Ropsten测试网的50万HOP的抵押。 每个矿工将从池中请求50000个HOP，因此50万 HOP可以拥有10个矿工。
 
 请将您的Ropsten钱包地址和您的Pool IP地址发送到 hyperorchidcs@gmail.com，以获得Pool的20万HOP抵押。
 

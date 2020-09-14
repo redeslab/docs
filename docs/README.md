@@ -96,9 +96,19 @@ $ scp Pool root@yourserverip:/root/pool
 $ scp HOP root@yourserverip:/root/hop
 ```
 
+Or use curl
+
+```console
+$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+```
+
+```console
+$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
+```
+
 ### Get Ropsten HOP Tokens
 
-During the Beta testing period, each Pool requests a deposit of 200K HOP tokens from Ropsten testnet. Each Miner will request 2000 HOP tokens from the Pool, so 200K HOP tokens can have 100 Miners.
+During the Beta testing period, each Pool requests a deposit of 500K HOP tokens from Ropsten testnet. Each Miner will request 50,000 HOP tokens from the Pool, so 500K HOP tokens can have 10 Miners.
 
 Please send your Ropsten wallet address along with your Pool IP address to hyperorchidcs@gmail.com to request the deposit token for Pool.
 

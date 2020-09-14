@@ -153,6 +153,40 @@ reg success!
 
 > 0xa353A767087D9aCab17c3fD941eeD29e166A9982 is your Pool Ropsten ETH wallet address
 
+#### Check BAS registration
+
+This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
+
+Navigate to the fold contains BAS tool:
+
++ For Pool
+
+  BAS Hong Kong:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
+```
+
+
++ For Miner
+
+  BAS Hong Kong:
+  
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 108.61.223.99 -t2
+```
 
 
 ### Pool Registration

@@ -26,6 +26,17 @@ We provide simple executable Pool and Miner files that's highly stable.
 [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 
+### Download BAS Net-tool
+
++ HOP for x64
+
+
+[BAS MacOS](_media/bas ':ignore')
+
+[BAS Windows](_media/bas.exe ':ignore')
+
+
+
 ### Dapps Example
 
 
@@ -44,20 +55,8 @@ To install the executable Pool and Miner
 $ scp Pool root@yourserverip:/root/pool
 ```
 
-OR
-
-```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
-```
-
 ```console
 $ scp HOP root@yourserverip:/root/hop
-```
-
-OR
-
-```console
-$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 ### Get Ropsten HOP Tokens

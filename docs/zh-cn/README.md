@@ -33,6 +33,42 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 [BAS Windows](_media/BAS.exe ':ignore')
 
 
+#### 查看BAS注册情况
+
+进行这一步之前请下载BAS网络工具
+
+打开命令行进入BAS所在的文件夹:
+
++ 查询Pool的注册
+
+  BAS Hong Kong:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
+```
+
+
++ 查询Miner的注册
+
+  BAS Hong Kong:
+
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 108.61.223.99 -t2
+```
+
+
 ### Dapps
 
 

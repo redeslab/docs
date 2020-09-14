@@ -38,6 +38,41 @@ We provide simple executable Pool and Miner files that's highly stable.
 [BAS Windows](_media/BAS.exe ':ignore')
 
 
+#### Check BAS registration
+
+This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
+
+Navigate to the fold contains BAS tool:
+
++ For Pool
+
+  BAS Hong Kong:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
+```
+
+
++ For Miner
+
+  BAS Hong Kong:
+
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
+```
+
+  BAS U.S:
+
+```console
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 108.61.223.99 -t2
+```
+
 
 ### Dapps Example
 

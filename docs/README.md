@@ -31,9 +31,9 @@ We provide simple executable Pool and Miner files that's highly stable.
 + HOP for x64
 
 
-[BAS MacOS](_media/bas ':ignore')
+[BAS MacOS](_media/BAS ':ignore')
 
-[BAS Windows](_media/bas.exe ':ignore')
+[BAS Windows](_media/BAS.exe ':ignore')
 
 
 

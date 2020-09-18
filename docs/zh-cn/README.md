@@ -30,7 +30,7 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 
 [BAS MacOS](_media/BAS ':ignore')
 
-[BAS Windows](_media/BAS.exe ':ignore')
+[BAS Windows](_media/BAS.zip ':ignore')
 
 
 #### 查看BAS注册情况

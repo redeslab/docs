@@ -35,7 +35,7 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 [BAS MacOS](_media/BAS ':ignore')
 
-[BAS Windows](_media/BAS.exe ':ignore')
+[BAS Windows](_media/BAS.zip ':ignore')
 
 
 #### Check BAS registration

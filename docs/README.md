@@ -52,10 +52,10 @@ Navigate to the fold contains BAS tool:
 $ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
 ```
 
-  BAS U.S:
+  BAS JP:
 
 ```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
 ```
 
 
@@ -67,10 +67,10 @@ $ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
 $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
 ```
 
-  BAS U.S:
+  BAS JP:
 
 ```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 108.61.223.99 -t2
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
 ```
 
 

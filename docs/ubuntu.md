@@ -79,7 +79,7 @@ $ vi ~/.pool/conf.json
 ```
 {
         "version": "0.1.0",
-        "basip": "34.96.151.222",
+        "basip": "198.13.44.159",
         "ethereum": {
                 "1": {
                         "id": 1,
@@ -128,7 +128,7 @@ $ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
 AND
 
 ```console
-$ Pool bas -b 108.61.223.99 -i YOURIPADDRESS -p 123
+$ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
 ```
 
 + Type your password and check success output from console:
@@ -173,10 +173,10 @@ Navigate to the fold contains BAS tool:
 $ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
 ```
 
-  BAS U.S:
+  BAS JP:
 
 ```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
+$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
 ```
 
 
@@ -188,10 +188,10 @@ $ BAS query -a 0xaaab(Your Pool wallet address)-b 108.61.223.99 -t1
 $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
 ```
 
-  BAS U.S:
+  BAS JP:
 
 ```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 108.61.223.99 -t2
+$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
 ```
 
 
@@ -493,7 +493,7 @@ $ vi ~/.hop/conf.hop
 
 ```
 {
-        "BAS": "34.96.151.222",
+        "BAS": "198.13.44.159",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
         "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
@@ -519,7 +519,7 @@ $ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
 AND
 
 ```console
-$ HOP bas -b 108.61.223.99 -m YOURIPADDRESS -p 321
+$ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321
 ```
 
 + Check console output:

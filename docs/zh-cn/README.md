@@ -12,25 +12,43 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 
 + HOP for x64
 
-矿机文件  [Pool_amd64](_media/Pool_amd64 ':ignore')
 
-矿池文件  [HOP_amd64](_media/HOP_amd64 ':ignore')
+[Pool_amd64](_media/Pool_amd64 ':ignore')
+
+[HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
 + HOP for ARM
 
-矿机文件  [Pool_arm64](_media/Pool_arm64 ':ignore')
+[Pool_arm64](_media/Pool_arm64 ':ignore')
 
-矿池文件  [HOP_arm64](_media/HOP_arm64 ':ignore')
+[HOP_arm64](_media/HOP_arm64 ':ignore')
+
+
++ HOP for MacOS
+
+[Pool_mac](_media/Pool_mac ':ignore')
+
+[HOP_mac](_media/HOP_mac ':ignore')
+
+
++ HOP for Windows
+
+The Pool has compatible issue, we will release Windows version in next update.
+
+[HOP_win](_media/HOP_win.zip ':ignore')
+
+
 
 ### 下载BAS网络工具
 
-+ HOP for x64
+[BAS MacOS](_media/BAS_mac ':ignore')
 
+[BAS Windows](_media/BAS_win.zip ':ignore')
 
-[BAS MacOS](_media/BAS ':ignore')
+[BAS Linux](_media/BAS_amd64 ':ignore')
 
-[BAS Windows](_media/BAS.zip ':ignore')
+[BAS ARM](_media/BAS_arm64 ':ignore')
 
 
 #### 查看BAS注册情况

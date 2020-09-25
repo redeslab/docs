@@ -40,7 +40,7 @@ $ vi ~/.pool/conf.json
                 "3": {
                         "id": 3,
                         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
+                        "paymentService": "0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d",
                         "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"
                 }
         }

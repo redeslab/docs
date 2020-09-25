@@ -20,7 +20,6 @@ We provide simple executable Pool and Miner files that's highly stable.
 [HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
-
 + HOP for ARM
 
 [Pool_arm64](_media/Pool_arm64 ':ignore')
@@ -28,14 +27,30 @@ We provide simple executable Pool and Miner files that's highly stable.
 [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 
++ HOP for MacOS
+
+[Pool_mac](_media/Pool_mac ':ignore')
+
+[HOP_mac](_media/HOP_mac ':ignore')
+
+
++ HOP for Windows
+
+The Pool has compatible issue, we will release Windows version in next update.
+
+[HOP_win](_media/HOP_win.zip ':ignore')
+
+
 ### Download BAS Net-tool
 
-+ HOP for x64
 
+[BAS MacOS](_media/BAS_mac ':ignore')
 
-[BAS MacOS](_media/BAS ':ignore')
+[BAS Windows](_media/BAS_win.zip ':ignore')
 
-[BAS Windows](_media/BAS.zip ':ignore')
+[BAS Linux](_media/BAS_amd64 ':ignore')
+
+[BAS ARM](_media/BAS_arm64 ':ignore')
 
 
 #### Check BAS registration

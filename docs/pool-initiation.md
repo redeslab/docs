@@ -48,3 +48,5 @@ $ vi ~/.pool/conf.json
 ```
 
 !>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Test network**
+
++ 

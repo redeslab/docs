@@ -79,7 +79,7 @@ $ vi ~/.pool/conf.json
 ```
 {
         "version": "0.1.0",
-        "basip": "198.13.44.159",
+        "basip": "34.96.151.222",
         "ethereum": {
                 "1": {
                         "id": 1,
@@ -493,7 +493,7 @@ $ vi ~/.hop/conf.hop
 
 ```
 {
-        "BAS": "198.13.44.159",
+        "BAS": "34.96.151.222",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
         "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",

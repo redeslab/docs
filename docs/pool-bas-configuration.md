@@ -16,13 +16,13 @@ $ ifconfig
 + Register your Pool with BAS network, we use the 123 as password we create earlier:
 
 ```console
-$ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
+$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
 ```
 
 AND
 
 ```console
-$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
+$ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
 ```
 
 + Check success output from console:

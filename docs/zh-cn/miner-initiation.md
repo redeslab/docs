@@ -27,22 +27,11 @@ $ vi ~/.hop/conf.hop
 
 ```
 {
-        "version": "0.1.0",
-        "basip": "34.96.151.222",
-        "ethereum": {
-                "1": {
-                        "id": 1,
-                        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x60eB24514eE5D5Be18685b433E5910C3205D085E",
-                        "token": "0x1999ac2b141E6d5c4e27579b30f842078bc620b3"
-                },
-                "3": {
-                        "id": 3,
-                        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d",
-                        "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"
-                }
-        }
+        "BAS": "34.96.151.222",
+        "id": 3,
+        "apiUrl": "https://ropsten.infura.io/v3/fe5ffffba0bf46bb9dc27fd5e04cd6cb",
+        "paymentService": "0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d",
+        "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"
 }
 ```
 

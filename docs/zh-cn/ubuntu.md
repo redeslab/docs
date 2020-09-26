@@ -90,7 +90,7 @@ $ vi ~/.pool/conf.json
                 "3": {
                         "id": 3,
                         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d",
+                        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
                         "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"
                 }
         }
@@ -236,7 +236,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -281,7 +281,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -370,7 +370,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/f3245cef90ed440897e43efc6b3dd0f7+
-+MicroPaySys:   0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -496,7 +496,7 @@ $ vi ~/.hop/conf.hop
         "BAS": "34.96.151.222",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-        "paymentService": "0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d",
+        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
         "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
 }
 ```
@@ -566,7 +566,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -636,7 +636,7 @@ Output:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0xF6FA41bd8f42d31a17c2343a129Fedcef2b2448d+
++MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -29,7 +29,7 @@ $ vi ~/.pool/conf.json
 ```
 {
         "version": "0.1.0",
-        "basip": "34.96.151.222",
+        "basip": "198.13.44.159",
         "ethereum": {
                 "1": {
                         "id": 1,

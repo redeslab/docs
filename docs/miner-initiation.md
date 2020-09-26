@@ -27,7 +27,7 @@ $ vi ~/.hop/conf.hop
 
 ```
 {
-        "BAS": "34.96.151.222",
+        "BAS": "198.13.44.159",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/fe5ffffba0bf46bb9dc27fd5e04cd6cb",
         "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",

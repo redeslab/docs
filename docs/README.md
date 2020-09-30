@@ -126,7 +126,7 @@ $ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 
 ### Get Ropsten HOP Tokens
 
-During the Beta testing period, each Pool requests a deposit of 500K HOP tokens from Ropsten testnet. Each Miner will request 50,000 HOP tokens from the Pool, so 500K HOP tokens can have 10 Miners.
+During the Beta testing period, each Pool requests a deposit of 300 HOP tokens from Ropsten testnet. Each Miner will request 300 HOP tokens from the Pool, so 300 HOP tokens can have 10 Miners.
 
 Please send your Ropsten wallet address along with your Pool IP address to hyperorchidcs@gmail.com to request the deposit token for Pool.
 

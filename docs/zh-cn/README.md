@@ -97,6 +97,10 @@ $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 
 
 <a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a>
 
+<a href="https://testflight.apple.com/join/aMDfC5cV">苹果Testflight</a>
+
+<a href="http://d.firim.vip/zy7s">中国地区安卓下载</a>
+
 
 ### 安装矿池和矿机
 

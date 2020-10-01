@@ -5,11 +5,11 @@
 !>**强烈建议矿池和矿机的服务器独立并且分开，使用同一台服务器会降低矿池和矿机的响应和稳定**
 
 ```console
-$ scp Pool root@yourserverip:/root/pool
+$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
 ```
 
 ```console
-$ scp HOP root@yourserverip:/root/hop
+$ curl -o Pool "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 

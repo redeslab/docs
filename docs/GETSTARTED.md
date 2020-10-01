@@ -3,11 +3,11 @@
 Upload the executable file to a remote CentOS server
 
 ```console
-$ scp Pool root@yourserverip:/root/pool
+$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
 ```
 
 ```console
-$ scp HOP root@yourserverip:/root/hop
+$ curl -o Pool "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 

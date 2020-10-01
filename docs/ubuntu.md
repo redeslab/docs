@@ -350,7 +350,7 @@ systemctl stop firewalld.service
 systemctl disable firewalld.service
 ```
 
-!>**Open 3000-65535 TCP and UDP port**
+!>**Open 3000-65535 TCP and UDP port and BAS tcp：8854 udp: 8853**
 
 
 + Start Pool
@@ -613,7 +613,7 @@ $ tail -f pool.log
 
 ### Running Miner
 
-!>**Open 3000-65535 TCP,UDP**
+!>**Open 3000-65535 TCP,UDP and BAS tcp：8854 udp: 8853**
 
 + Warning up Miner
 

@@ -419,7 +419,7 @@ hyperor+ 23592     1  0 Jul09 ?        00:32:34 Pool -d -p 123
 + Check ports Pool are using if you have problem register the Pool and open the ports if they are closed:
 
 ```console
-$ netstat -tulpn | grep LISTEN
+$ netstat -nlp| grep Pool
 ```
 
 ### Miner Install and Initiation
@@ -703,7 +703,7 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 + To make sure which TCP and UDP ports Miner are using please use following command and open the ports that Miner needed:
 
 ```console
-$ netstat -nlp| grep Pool
+$ netstat -nlp| grep HOP
 ```
 
 > Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.

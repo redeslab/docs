@@ -1,49 +1,50 @@
 ### Download files using Curl
 
-!> The following steps are suitable for Ropsten testnet, for ETH mainnet please remove the option **"-d"**.
+!> 以下的步骤只适合于Ropsten测试网, 如果使用以太主网请移除选项 **"-d"**.
 
-Curl can be used to transfer data over a number of protocols. It supports many protocols including HTTP, HTTPS, FTP, TFTP, TELNET, SCP, etc. using Curl, you can download any remote files. It supports pause and resumes function as well.
+Curl可用于通过多种协议传输数据。 它支持许多协议，包括HTTP，HTTPS，FTP，TFTP，TELNET，SCP等。使用Curl，您可以下载任何远程文件。 它也支持暂停和恢复功能。
 
-To get started with, first, you need to install the curl.
-Install curl
+首先，您需要安装curl。
 
-Launch command line application in Ubuntu that is Terminal by pressing the Ctrl+Alt+T key combinations. Then enter the below command to install curl with sudo.
+安装curl
+
+通过按Ctrl + Alt + T组合键在Ubuntu终端中启动命令行应用程序。 然后输入以下命令以使用sudo安装curl。
 
 ```console
 $ sudo apt install curl
 ```
 
-When prompted for a password, enter sudo password.
+如果看到密码输入提示，请输入管理员的密码
 
 
-### Download and save the file using the source file name
+### 下载和安装Pool
 
-To save the file with the same name as the original source file on the remote server, use –O (uppercase O) followed by curl as below:
+保存和源文件同样的文件名，当请使用curl的时候添加–O选项：
 
 ```console
 $ mkdir pool
 ```
 
-+ Entering the new create pool folder and download the HOP Pool software:
++ 进入新建的文件夹并且下载HOP Pool:
 
 ```console
 $ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
 ```
 
-+ Assign permission to run Pool
++ 添加Pool的可执行权限
 
 ```console
 $ chmod +x Pool
 ```
 
-+ Open bashrc
++ 打开bashrc
 
 
 ```console
 $ vi ~/.bashrc
 ```
 
-+ Add this into bash profile's last line:
++ 添加以下的信息到bashrc文件的最后一段:
 
 
 ```
@@ -54,27 +55,27 @@ PATH=$PATH:$HOME/bin:~/hop:~/pool
 export PATH
 ```
 
-Save the file and load the new $PATH into the current shell session using the source command:
+重新加载bashrc文件让系统能辨识Pool命令：
 
 ```console
 $ source ~/.bashrc
 ```
 
-+ Init Pool
++ 初始化Pool
 
 ```console
 $ Pool init
 ```
 
-> Type your own password through command line, here we use 123 as example
+> 在命令行里面输入你想设置的密码，这里我们用123作为例子
 
-+ Open Pool settings:
++ 打开Pool配置文件:
 
 ```console
 $ vi ~/.pool/conf.json
 ```
 
-+ Change the settings as following:
++ 用以下信息修改配置文件:
 
 ```
 {
@@ -97,12 +98,12 @@ $ vi ~/.pool/conf.json
 }
 ```
 
-!>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Testnet**
+!>**id 1是以太主网，id 3是Ropsten测试网**
 
-### BAS Configuration
+### 添加Pool的IP到HOP全球网络中
 
 
-+ This step is to connect the Pool with BAS network in order to have HOP protocol regonize your new Pool:
++ 这一步是为了让HOP全球网络能识别你的新矿池:
 
 ```console
 $ sudo apt-get update -y
@@ -113,25 +114,25 @@ $ sudo apt-get install -y net-tools
 ```
 
 
-+ Find your public IP address:
++ 查看你的公网IP地址:
 
 ```console
 $ ifconfig
 ```
 
-+ Register your Pool with BAS network, we use the 123 as password we create earlier:
++ 注册你的Pool到HOP全球网络，我们使用123作为示例密码:
 
 ```console
 $ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
 ```
 
-AND
+和
 
 ```console
 $ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
 ```
 
-+ Type your password and check success output from console:
++ 查看命令行成功的提示信息:
 
 
 ```console
@@ -157,51 +158,51 @@ log init success
 reg success!
 ```
 
-> 0xa353A767087D9aCab17c3fD941eeD29e166A9982 is your Pool Ropsten ETH wallet address
+> 0xa353A767087D9aCab17c3fD941eeD29e166A9982是你矿池的Ropsten钱包地址
 
-#### Check BAS registration
+#### 查看HOP全球网络注册信息
 
-This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
+这一步使用了BAS软件，请到docs.hyperorchid.org下载该软件.
 
-Navigate to the fold contains BAS tool:
+进入包含BAS的文件夹:
 
-+ For Pool
++ 查看Pool
 
-  BAS Hong Kong:
+  BAS香港:
 
 ```console
 $ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
 ```
 
-  BAS JP:
+  BAS日本:
 
 ```console
 $ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
 ```
 
 
-+ For Miner
++ 查看矿机
 
-  BAS Hong Kong:
+  BAS香港:
 
 ```console
 $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
 ```
 
-  BAS JP:
+  BAS日本:
 
 ```console
 $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
 ```
 
 
-### Pool Registration
+### 注册Pool
 
-Use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
+使用Metamask谷歌或者火狐插件创建Ropsten钱包 https://openattestation.com/docs/appendix/ropsten-setup
 
-!> Please transfer **sufficient HOP Tokens** into yur Pool wallet by send email to hyperorchidcs@gmail.com in order to continue this step.
+!> 请转入**足够的HOP**到你的Pool钱包地址,请发送电子邮件到 hyperorchidcs@gmail.com 申请HOP测试币以便完成以下步骤.
 
-!> Please transfer **sufficient ETH Tokens** into your Pool wallet through https://faucet.ropsten.be/ or https://faucet.metamask.io/.
+!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.ropsten.be/ 或者 https://faucet.metamask.io/ 申请ETH测试币.
 
 
 ```Usage:
@@ -217,7 +218,7 @@ Flags:
   -u, --url string        Pool's website '
 ```
 
-+ Check ETH and HOP Blance
++ 查看ETH和HOP的余额
 
 
 ```console
@@ -255,15 +256,15 @@ eth balance:-> 5000000000000000000
 contract approved:-> 0
 ```
 
-!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xa353A767087D9aCab17c3fD941eeD29e166A9982**
+!>**请一定要转入足够的HOP和ETH测试币,此示例中的Pool钱包地址是 0xa353A767087D9aCab17c3fD941eeD29e166A9982**
 
-+ Register Your Pool with Ropsten Test Network
++ 注册Pool到Ropsten测试网
 
 ```console
 $ Pool eth reg -d -e "youremail@address.com" -n "Pool_Name" -u "https://yoursite.com"
 ```
 
-+ Type your password which is created during the initiation 
++ 输入你在初始化的步骤设置的Pool密码
 
 ```console
 log init success
@@ -317,11 +318,11 @@ register success
 0x991f0954b954164615a2454386dfd61174b0c0b72ede39c678989d097b2f639c
 ```
 
->The Registration takes up to 10-20 mins, check the Pirate Dapp or MAC OS Application to make sure your pool is appearing in the "Flow Market".
+>注册矿池可能需要10-20分钟, 查看海盗Dapp或者MACOS的客户端确认你的矿池是否出现在"矿池"或者“流量市场”.
 
-### Download Pirate and check your Pool is successfully registered or not
+### 下载海盗以便确认你的矿池是否注册成功
 
-Pirate is a cross-platform Dapp(Decentralized Application) developed in HOP protocol. Pirate is the first affiliate software whose sole goal is to provide VPN app to all users. 
+海盗是一款接入HOP协议的跨平台Dapp(去中心化app). 海盗是第一款HOP的第三方合作软件. 
 
 <a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
@@ -330,7 +331,7 @@ Pirate is a cross-platform Dapp(Decentralized Application) developed in HOP prot
 
 <a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a>
 
-+ BitVPN_Ubuntu successfully registered
++ BitVPN_Ubuntu矿池已经注册成功
 
 **iOS**
 
@@ -341,19 +342,19 @@ Pirate is a cross-platform Dapp(Decentralized Application) developed in HOP prot
 ![logo](_media/bitvpn_android_2020-09-12_17-02-31.jpg ':size=40%')
 
 
-### Running Pool
+### 运行矿池
 
-+ Turn off Firewall:
++ 关闭防火墙:
 
 ```console
 systemctl stop firewalld.service 
 systemctl disable firewalld.service
 ```
 
-!>**Open 3000-65535 TCP and UDP port**
+!>**打开3000-65535的TCP和UDP端口,打开BAS端口tcp：8854和udp: 8853**
 
 
-+ Start Pool
++ 运行矿池
 
 ```console
 $ Pool -d
@@ -390,65 +391,65 @@ log init success
 >>>05-08/03:18:22 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:24 local:23
 ```
 
-+ Stop Pool(We will restart Pool in next step with nohup command):
++ 停止矿池(我们会在下一步中使用nohup命令后台运行矿池):
 
 ```
 CTRL+C 
 ```
 
-+ Restart Pool with nohup command:
++ 使用nohup重启矿池:
 
 
 ```console
 $ nohup Pool -d -p 123 2>pool.log &
 ```
 
-+ Make sure the Pool is running
++ 确认矿池已经在后台运行
 
 ```console
 $ ps -ef|grep Pool
 ```
 
-Output:
+命令行输出:
 
 ```
 hyperor+  9470  9437  0 23:07 pts/0    00:00:00 grep --color=auto Pool
 hyperor+ 23592     1  0 Jul09 ?        00:32:34 Pool -d -p 123
 ```
 
-+ Check ports Pool are using if you have problem register the Pool and open the ports if they are closed:
++ 确认用以下命令查看矿池的端口都已经打开:
 
 ```console
-$ netstat -tulpn | grep LISTEN
+$ netstat -nlp| grep Pool
 ```
 
-### Miner Install and Initiation
+### 矿机安装及初始化
 
-!> **Pool and Miner install in different server is recommanded**
+!> **推荐矿池和矿机安装在不同的服务器上**
 
 ```console
 $ mkdir hop
 ```
 
-+ Entering the new create hop folder and download the HOP Pool software:
++ 进入新建的hop文件夹并且下载矿机软件:
 
 ```console
 $ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
-+ Assign permission to run Pool
++ 给矿机软件添加可执行权限
 
 ```console
 $ chmod +x HOP
 ```
 
-+ Open bash profile
++ 打开bash文件
 
 ```console
 $ vi ~/.bashrc
 ```
 
-+ Add this into bash profile's last line:
++ 添加以下的信息到bash文件的最后一段:
 
 
 ```
@@ -459,15 +460,15 @@ PATH=$PATH:$HOME/bin:~/hop:~/pool
 export PATH
 ```
 
-Save the file and load the new $PATH into the current shell session using the source command:
+重新加载bash文件
 
 ```console
 $ source ~/.bashrc
 ```
 
-### Miner BAS Configuration
+### 矿机全球网络设置
 
-+ This step is to connect the Miner with BAS network in order to have HOP protocol regonize the new Miner:
++ 这一步是让HOP全球网络能发现你的矿机:
 
 ```console
 $ sudo apt-get update -y
@@ -477,19 +478,19 @@ $ sudo apt-get update -y
 $ sudo apt-get install -y net-tools
 ```
 
-+ HOP Miner Init:
++ 矿机初始化:
 
 ```console
 $ HOP init
 ```
 
-+ Open Miner settings:
++ 打开矿机配置文件:
 
 ```console
 $ vi ~/.hop/conf.hop
 ```
 
-+ Change the settings as following:
++ 覆盖以下信息到矿机配置文件:
 
 ```
 {
@@ -501,28 +502,28 @@ $ vi ~/.hop/conf.hop
 }
 ```
 
-!>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Test network**
+!>**id 1是以太坊主网id 3是Ropsten测试网**
 
 
-+ Find your public IP address:
++ 查看你的公网IP地址:
 
 ```console
 $ ifconfig
 ```
 
-+ Register your Miner with BAS network, we use the 321 as password we create earlier:
-
-```console
-$ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
-```
-
-AND
++ 注册你的矿机到HOP全球网络，这里我们使用123作为示例密码:
 
 ```console
 $ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321
 ```
 
-+ Check console output:
+AND
+
+```console
+$ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
+```
+
++ 查看命令行提示:
 
 ```
 45.77.5.223 16
@@ -530,9 +531,9 @@ HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3 46
 reg success!
 ```
 
-### Join a Pool
+### 加入矿机到一个矿池里面
 
-+ Find your Miner wallet address
++ 查看矿机钱包地址和ID
 
 ```console
 $ HOP show address
@@ -542,18 +543,18 @@ HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
 0x6863a62305800a1e5b6bbc4fc9549ea204786e534010cea4780d11ed0187d0b8
 ```
 
->0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5 is your Miner wallet address, HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo is your Miner id.
+>0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5是钱包地址, HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo是矿机id.
 
 
-#### - Open Your Pool Console
+#### - 打开矿池服务器的命令行
 
-+ Join Miner to a Pool
++ 加入矿机到该矿池
 
 ```console
 $ Pool eth join -d -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -z "US_San1" -p 123
 ```
 
-Output
+命令行提示
 
 ```
 conf init success
@@ -590,15 +591,15 @@ join success
 0x8c3e14ce536bebc2ce5b3c98faff44d199878ffbde27f20d678a37b516bb6439
 ```
 
-!>**Wait untill the "join success" appeared and check the Pool with**
+!>**请等到"join success"出现在命令行**
 
-+ Check pool.log
++ 查看pool.log
 
 ```console
 $ tail -f pool.log
 ```
 
-  Output:
+  提示:
 ```console
 >>>09-13/03:08:44 mchain.go:150        Syncing              [NOTI] Miner data start to sync:sys:90 local:89
 
@@ -611,17 +612,17 @@ $ tail -f pool.log
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
-### Running Miner
+### 运行矿机
 
-!>**Open 3000-65535 TCP,UDP**
+!>**打开3000-65535 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
 
-+ Warning up Miner
++ 第一次运行矿机
 
 ```console
 $ HOP
 ```
 
-Output:
+命令行提示:
 
 ```console
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -654,7 +655,7 @@ log init success
 >>>>>>>>>>miner start at pid(2692)<<<<<<<<<<
 ```
 
-+ Output from Pool.log
++ 矿池Pool.log提示
 
 ```console
 >>>09-13/04:35:08 miner.go:30          updateMinerData      [NOTI] update local miner data by :
@@ -675,35 +676,35 @@ PoolAddr:       0xa353A767087D9aCab17c3fD941eeD29e166A9982
 -----------------~~__-__-_-_-___--___-___~~------------------
 ```
 
-+ Stop Miner(We will restart Miner in next step with nohup command):
++ 停止矿机(我们会在下一步用nohup重新启动矿机):
 
 ```
 CTRL+C 
 ```
 
-+ Running Miner with nohup:
++ 用nohup命令在后台运行矿机:
 
 ```console
 $ nohup HOP -p 321 2>hop.log &
 ```
 
-+ Check Miner thread is running properly:
++ 查看矿机运行是否正常:
 
 ```console
 $ ps -ef|grep HOP
 ```
 
-Output:
+命令行提示:
 
 ```console
 root        2702    2681 23 04:41 pts/2    00:00:01 HOP -p 321
 root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 ```
 
-+ To make sure which TCP and UDP ports Miner are using please use following command and open the ports that Miner needed:
++ 使用以下命令确认所有矿机占用的端口都已经打开:
 
 ```console
-$ netstat -tulpn | grep LISTEN
+$ nnetstat -nlp| grep HOP
 ```
 
 > Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.

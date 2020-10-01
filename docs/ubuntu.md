@@ -703,7 +703,7 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 + To make sure which TCP and UDP ports Miner are using please use following command and open the ports that Miner needed:
 
 ```console
-$ netstat -tulpn | grep LISTEN
+$ netstat -nlp| grep Pool
 ```
 
 > Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.

@@ -103,6 +103,12 @@ $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 
 
 <a href="http://d.firim.vip/zy7s">APK</a>
 
+### Tutorial
+
+<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/ugd/a0a63d_cde36015ae7c45c5bb37f9fe88b9f5a7.pdf">Android Tutorial</a>
+
+<a href="">iOS(Coming Up Soon...)</a>
+
 ### Installation
 To install the executable Pool and Miner
 

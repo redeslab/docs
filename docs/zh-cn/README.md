@@ -101,6 +101,12 @@ $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 
 
 <a href="http://d.firim.vip/zy7s">中国地区安卓下载</a>
 
+### 使用教程
+
+<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/ugd/a0a63d_be53657163534aaeb34fb275dfa19dda.pdf">安卓教程</a>
+
+<a href="">iOS(即将更新...)</a>
+
 
 ### 安装矿池和矿机
 

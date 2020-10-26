@@ -1,22 +1,3 @@
-### Download files using Curl
-
-!> 以下的步骤只适合于Ropsten测试网, 如果使用以太主网请移除选项 **"-d"**.
-
-Curl可用于通过多种协议传输数据。 它支持许多协议，包括HTTP，HTTPS，FTP，TFTP，TELNET，SCP等。使用Curl，您可以下载任何远程文件。 它也支持暂停和恢复功能。
-
-首先，您需要安装curl。
-
-安装curl
-
-通过按Ctrl + Alt + T组合键在Ubuntu终端中启动命令行应用程序。 然后输入以下命令以使用sudo安装curl。
-
-```console
-$ sudo apt install curl
-```
-
-如果看到密码输入提示，请输入管理员的密码
-
-
 ### 下载和安装Pool
 
 保存和源文件同样的文件名，当请使用curl的时候添加–O选项：
@@ -28,7 +9,7 @@ $ mkdir pool
 + 进入新建的文件夹并且下载HOP Pool:
 
 ```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+$ wget https://docs.hyperorchid.org/_media/Pool_amd64
 ```
 
 + 添加Pool的可执行权限
@@ -434,7 +415,7 @@ $ mkdir hop
 + 进入新建的hop文件夹并且下载矿机软件:
 
 ```console
-$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 + 给矿机软件添加可执行权限

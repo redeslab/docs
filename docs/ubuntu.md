@@ -1,21 +1,3 @@
-### Download files using Curl
-
-!> The following steps are suitable for Ropsten testnet, for ETH mainnet please remove the option **"-d"**.
-
-Curl can be used to transfer data over a number of protocols. It supports many protocols including HTTP, HTTPS, FTP, TFTP, TELNET, SCP, etc. using Curl, you can download any remote files. It supports pause and resumes function as well.
-
-To get started with, first, you need to install the curl.
-Install curl
-
-Launch command line application in Ubuntu that is Terminal by pressing the Ctrl+Alt+T key combinations. Then enter the below command to install curl with sudo.
-
-```console
-$ sudo apt install curl
-```
-
-When prompted for a password, enter sudo password.
-
-
 ### Download and save the file using the source file name
 
 To save the file with the same name as the original source file on the remote server, use –O (uppercase O) followed by curl as below:
@@ -27,7 +9,7 @@ $ mkdir pool
 + Entering the new create pool folder and download the HOP Pool software:
 
 ```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+$ wget https://docs.hyperorchid.org/_media/Pool_amd64
 ```
 
 + Assign permission to run Pool
@@ -433,7 +415,7 @@ $ mkdir hop
 + Entering the new create hop folder and download the HOP Pool software:
 
 ```console
-$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
 ```
 
 + Assign permission to run Pool

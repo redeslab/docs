@@ -59,11 +59,6 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 + 查询Pool的注册
 
-  BAS Hong Kong:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
-```
 
   BAS JP:
 
@@ -74,11 +69,6 @@ $ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
 
 + 查询Miner的注册
 
-  BAS Hong Kong:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
-```
 
   BAS JP:
 

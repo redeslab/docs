@@ -61,11 +61,6 @@ Navigate to the fold contains BAS tool:
 
 + For Pool
 
-  BAS Hong Kong:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
-```
 
   BAS JP:
 
@@ -76,11 +71,6 @@ $ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
 
 + For Miner
 
-  BAS Hong Kong:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
-```
 
   BAS JP:
 
@@ -147,6 +137,10 @@ Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/do
 + Enhance security level for online shopping and transaction.
 
 HOP is a anonymous VPN protocol its build-in micro-payment system provide real time payment method for VPN user through HOP ERC-20 Token.
+
+### Tutorial From Third-Parties
+
+?> Wonderland *(http://wonderland.zomia.me/)*
 
 
 ### Telegram

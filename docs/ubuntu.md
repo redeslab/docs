@@ -1,6 +1,5 @@
 ### Download and save the file using the source file name
 
-To save the file with the same name as the original source file on the remote server, use –O (uppercase O) followed by curl as below:
 
 ```console
 $ mkdir pool

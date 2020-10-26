@@ -1,7 +1,5 @@
 ### 下载和安装Pool
 
-保存和源文件同样的文件名，当请使用curl的时候添加–O选项：
-
 ```console
 $ mkdir pool
 ```

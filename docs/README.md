@@ -1,6 +1,6 @@
 ### HOP
 
-!> HOP is now open the first round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
+!> HOP is now open the second round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
 
 HOP Ropsten Token Address 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25, use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
 

@@ -1,6 +1,8 @@
 <!-- docs/_sidebar.md -->
 
 * [准备和安装](/zh-cn/GETSTARTED.md)
+- **Ropsten测试网 - Ubuntu** 
+  - [Ubuntu 20.04](/zh-cn/ubuntu)
 - **矿池设置**
   - [初始化](/zh-cn/pool-initiation)
   - [Bas设置](/zh-cn/pool-bas-configuration)
@@ -13,8 +15,6 @@
   - [Bas设置](/zh-cn/miner-bas-configuration)
   - [加入一个矿池](/zh-cn/miner-join-a-pool)
   - [运行矿机](/zh-cn/miner-run)
-- **Ropsten测试网 - Ubuntu** 
-  - [Ubuntu 20.04](/zh-cn/ubuntu)
 - **命令和选项**
   - [矿池](/zh-cn/pool-command-option)
   - [矿机](/zh-cn/miner-command-option)

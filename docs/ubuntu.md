@@ -79,7 +79,7 @@ $ vi ~/.pool/conf.json
         "access_pub_key": [
                 "0x52B65e5a662D330f259f4161Efb2eF4034365914"
         ]
- }
+}
 ```
 
 !>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Testnet**
@@ -105,12 +105,6 @@ $ ifconfig
 ```
 
 + Register your Pool with BAS network, we use the 123 as password we create earlier:
-
-```console
-$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
-```
-
-AND
 
 ```console
 $ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
@@ -497,11 +491,6 @@ $ ifconfig
 
 + Register your Miner with BAS network, we use the 321 as password we create earlier:
 
-```console
-$ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
-```
-
-AND
 
 ```console
 $ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321

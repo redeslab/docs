@@ -105,11 +105,6 @@ $ ifconfig
 
 + 注册你的Pool到HOP全球网络，我们使用123作为示例密码:
 
-```console
-$ Pool bas -b 34.96.151.222 -i YOURIPADDRESS -p 123
-```
-
-和
 
 ```console
 $ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
@@ -185,7 +180,7 @@ $ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 
 
 !> 请转入**足够的HOP**到你的Pool钱包地址,请发送电子邮件到 hyperorchidcs@gmail.com 申请HOP测试币以便完成以下步骤.
 
-!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.ropsten.be/ 或者 https://faucet.metamask.io/ 申请ETH测试币.
+!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.dimensions.network/ 或者 https://faucet.metamask.io/ 申请ETH测试币.
 
 
 ```Usage:
@@ -500,11 +495,6 @@ $ ifconfig
 $ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321
 ```
 
-AND
-
-```console
-$ HOP bas -b 34.96.151.222 -m YOURIPADDRESS -p 321
-```
 
 + 查看命令行提示:
 

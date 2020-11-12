@@ -6,7 +6,7 @@ HOP Ropsten Token Address 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25, use Metama
 
 > A open and decentrilized VPN protocol.
 
-HOP is build on Ethereum network, it uses the micro-payment system to run the pool and miners as well as the payment interface between VPN users and the pools. 
+HOP is built on Ethereum network, it uses the micro-payment system to run the pool and miners as well as the payment interface between VPN users and the pools. 
 
 We provide simple executable Pool and Miner files that's highly stable.
 
@@ -36,7 +36,7 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 + HOP for Windows
 
-The Pool has compatible issue, we will release Windows version in next update.
+The Pool has compatibility issue, we will release Windows version in next update.
 
 [HOP_win](_media/HOP_win.zip ':ignore')
 
@@ -55,7 +55,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 #### Check BAS registration
 
-This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
+This step uses BAS net-tool please go [here](docs.hyperorchid.org) download the BAS for MACOS or Windows.
 
 Navigate to the fold contains BAS tool:
 
@@ -138,7 +138,7 @@ Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/do
 
 HOP is a anonymous VPN protocol its build-in micro-payment system provide real time payment method for VPN user through HOP ERC-20 Token.
 
-### Tutorial From Third-Parties
+### Tutorials From Third-Parties
 
 ?> Wonderland *(http://wonderland.zomia.me/)*
 
@@ -146,7 +146,7 @@ HOP is a anonymous VPN protocol its build-in micro-payment system provide real t
 ### Telegram
 ?> Find us on Telegram *[@hyperorchid ](https://t.me/hopcommunity)*
 ### Twitter
-?> Follow us on twitter (or post a tweet and tag me) *[@hyperorchid ](https://twitter.com/hyperorchid)*
+?> Follow us on twitter (or post a tweet and tag us) *[@hyperorchid ](https://twitter.com/hyperorchid)*
 ### GitHub
 ?> Find us on GitHub *[@hyperorchidlab ](https://github.com/hyperorchidlab/)*
 ### Reddit

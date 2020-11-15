@@ -180,7 +180,7 @@ Use Metamask Chrome or Firefox extension to create Ropsten wallet https://openat
 
 !> Please transfer **sufficient HOP Tokens** into yur Pool wallet by send email to hyperorchidcs@gmail.com in order to continue this step.
 
-!> Please transfer **sufficient ETH Tokens** into your Pool wallet through https://faucet.ropsten.be/ or https://faucet.metamask.io/.
+!> Please transfer **sufficient ETH Tokens** into your Pool wallet through https://faucet.dimensions.network/ or https://faucet.metamask.io/.
 
 
 ```Usage:

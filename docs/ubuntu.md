@@ -41,6 +41,40 @@ Save the file and load the new $PATH into the current shell session using the so
 $ source ~/.bashrc
 ```
 
+
+### BAS Configuration
+
+
++ This step is to connect the Pool with BAS network in order to have HOP protocol regonize your new Pool:
+
+```console
+$ cd pool
+```
+
++ Download the BAS tool and install into your server under pool folder
+
+```console
+$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+```
+
++ change BAS_amd64 tp BAS and change BAS privilege
+
+```console
+$ mv BAS_amd64 BAS
+```
+
+```console
+$ chmod +x BAS
+```
+
++ Start the BAS
+
+```console
+$ nohup ./BAS> bas.log 2>&1 &
+```
+
+!> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.
+
 + Init Pool
 
 ```console
@@ -60,7 +94,7 @@ $ vi ~/.pool/conf.json
 ```
 {
         "version": "0.1.3",
-        "basip": "198.13.44.159",
+        "basip": "167.179.75.39",
         "web_port": 19576,
         "ethereum": {
                 "1": {
@@ -72,7 +106,7 @@ $ vi ~/.pool/conf.json
                 "3": {
                         "id": 3,
                         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x4291d9ff189d90ba875e0fc1da4d602406dd7d6e",
+                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
                         "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
                 }
         },
@@ -84,30 +118,11 @@ $ vi ~/.pool/conf.json
 
 !>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Testnet**
 
-### BAS Configuration
-
-
-+ This step is to connect the Pool with BAS network in order to have HOP protocol regonize your new Pool:
-
-```console
-$ sudo apt-get update -y
-```
-
-```console
-$ sudo apt-get install -y net-tools
-```
-
-
-+ Find your public IP address:
-
-```console
-$ ifconfig
-```
 
 + Register your Pool with BAS network, we use the 123 as password we create earlier:
 
 ```console
-$ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
+$ Pool bas -b 167.179.75.39 -i YOURIPADDRESS -p 123
 ```
 
 + Type your password and check success output from console:
@@ -138,41 +153,30 @@ reg success!
 
 > 0xa353A767087D9aCab17c3fD941eeD29e166A9982 is your Pool Ropsten ETH wallet address
 
-#### Check BAS registration
+#### BAS Registration
 
-This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
+This step is to make HOP Global Network recongizing your server.
 
 Navigate to the fold contains BAS tool:
 
 + For Pool
 
-  BAS Hong Kong:
-
 ```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
+$ ./Pool bas -e "your_email_address@hop.com" -n "your_pool_name" -p 123 -i your_ip_address -u http://yoursite.com
 ```
 
-  BAS JP:
++ BAS commands
 
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
+```Usage:
+Flags:
+  -b, --bas string        BAS IP to save and query, default from conf file
+  -e, --email string      email for contacting pool's administrator
+  -h, --help              help for bas
+  -n, --name string       pool name
+  -p, --password string   Pool's block chain password'
+  -i, --pool-ip string    Pool's ip for it's block chain address
+  -u, --url string        website address for pool
 ```
-
-
-+ For Miner
-
-  BAS Hong Kong:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
-```
-
-  BAS JP:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
-```
-
 
 ### Pool Registration
 
@@ -208,38 +212,31 @@ $ Pool eth balance -d
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
++PoolVersion:   1.0.0_gr+
 +DebugMode:     true+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xa353A767087D9aCab17c3fD941eeD29e166A9982
-main address:-> 0x0000000000000000000000000000000000000000
-payer address:-> 0x0000000000000000000000000000000000000000
-guaranteed token:-> 0
-official web:->
-pool's name:->
-pool's email:->
-hop balance:-> 200001000000000000000000
-eth balance:-> 5000000000000000000
-contract approved:-> 0
+0xDfB3533df84bC4955552B55F6933AD99b429be89
+main address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
+payer address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
 ```
 
-!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xa353A767087D9aCab17c3fD941eeD29e166A9982**
+!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xDfB3533df84bC4955552B55F6933AD99b429be89**
 
-+ Register Your Pool with Ropsten Test Network
++ Register Your Pool with Ropsten Test Network, Where -t represents the HOP value mortgaged to the contract, which must be greater than or equal to 300.
 
 ```console
-$ Pool eth reg -d -e "youremail@address.com" -n "Pool_Name" -u "https://yoursite.com"
+$ ./Pool eth reg -d -t 300
 ```
 
 + Type your password which is created during the initiation 
@@ -253,14 +250,14 @@ Password=>
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
++PoolVersion:   1.0.0_gr+
 +DebugMode:     true+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -335,52 +332,9 @@ systemctl disable firewalld.service
 + Start Pool
 
 ```console
-$ Pool -d
+$ nohup ./Pool -d -p123> pool.log 2>&1 &
 ```
 
-```console
-conf init success
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
-+DebugMode:     true+
-+LogLevel:      INFO+
-+Token:
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+NetworkID:     3+
-+EthApiUrl:     https://ropsten.infura.io/v3/f3245cef90ed440897e43efc6b3dd0f7+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
-+Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-log init success
-
->>>05-08/03:15:04 mchain.go:104        newChain             [NOTI] Create micro chain sync worker success..[user version:0]..[miner version:0]..
-
-
->>>>>>>>>>miner pool start at pid(10823)<<<<<<<<<<
-
->>>05-08/03:15:18 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:23 local:0
-
->>>05-08/03:15:18 mchain.go:151        Syncing              [NOTI] sync user account (block:508, local:0)
-
->>>05-08/03:18:22 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:24 local:23
-```
-
-+ Stop Pool(We will restart Pool in next step with nohup command):
-
-```
-CTRL+C 
-```
-
-+ Restart Pool with nohup command:
-
-
-```console
-$ nohup Pool -d -p 123 2>pool.log &
-```
 
 + Make sure the Pool is running
 
@@ -448,34 +402,55 @@ $ source ~/.bashrc
 
 + This step is to connect the Miner with BAS network in order to have HOP protocol regonize the new Miner:
 
+
 ```console
-$ sudo apt-get update -y
+$ cd hop
+```
+
++ Download the BAS tool and install into your server under pool folder
+
+```console
+$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+```
+
++ change BAS_amd64 tp BAS and change BAS privilege
+
+```console
+$ mv BAS_amd64 BAS
 ```
 
 ```console
-$ sudo apt-get install -y net-tools
+$ chmod +x BAS
 ```
+
++ Start the BAS
+
+```console
+$ nohup ./BAS> bas.log 2>&1 &
+```
+
+!> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.
 
 + HOP Miner Init:
 
 ```console
-$ HOP init
+$ ./HOP init -p 123
 ```
 
 + Open Miner settings:
 
 ```console
-$ vi ~/.hop/conf.hop
+$ vi ~/.hop/conf.json
 ```
 
 + Change the settings as following:
 
 ```
 {
-        "BAS": "198.13.44.159",
+        "BAS": "167.179.75.39",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
+        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
         "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
 }
 ```
@@ -493,8 +468,10 @@ $ ifconfig
 
 
 ```console
-$ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321
+$ ./HOP bas -l "minerloc" -m your_miner_ip -p 321
 ```
+
+!> where -l represents the location information of the miner, which can be filled in at most eight bytes, and -m represents the external network service ip address of the miner.
 
 + Check console output:
 
@@ -524,8 +501,10 @@ HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
 + Join Miner to a Pool
 
 ```console
-$ Pool eth join -d -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -z "US_San1" -p 123
+$ ./Pool eth join -d -p 123 -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -t 30
 ```
+
+>Where -s represents the micropayment address of the miner, and -t represents the hop tokens that the miner needs to deposit[minimum is 30].
 
 Output
 
@@ -540,7 +519,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -589,76 +568,11 @@ $ tail -f pool.log
 
 !>**Open 3000-65535 TCP,UDP and BAS tcp：8854 udp: 8853**
 
-+ Warning up Miner
-
-```console
-$ HOP
-```
-
-Output:
-
-```console
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+WalletPath:    /root/.hop/wallet.json+
-+DBPath:        /root/.hop/Receipts+
-+LogPath:       /root/.hop/log.hop+
-+PidPath:       /root/.hop/pid.hop+
-+ConfPath:      /root/.hop/conf.hop+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+NetworkID:     3+
-+EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
-+Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Password=>
-log init success
-
->>>09-13/04:36:54 micChain.go:55       newChain             [NOTI] Sync miner data:
-@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
-@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-@@GTN           50000000000000000000000
-@@Zone          US
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
->>>>>>>>>>miner start at pid(2692)<<<<<<<<<<
-```
-
-+ Output from Pool.log
-
-```console
->>>09-13/04:35:08 miner.go:30          updateMinerData      [NOTI] update local miner data by :
-@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
-@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-@@GTN           50000000000000000000000
-@@Zone          US
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
->>>09-13/04:36:49 mchain.go:234        newRcpReader         [DEBU] RCP Keep Alive : 0xb19b231Ea69B5A2113F09Ad9AAEa0A471272140b 187.252.197.14:51569
-
->>>09-13/04:36:54 receipt.go:80        createMinerRcpWire   [NOTI] New Miner online:
-----------------------ReceiptQuery-----------------------
-Typ:    1
-UserAddr:       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-PoolAddr:       0xa353A767087D9aCab17c3fD941eeD29e166A9982
------------------~~__-__-_-_-___--___-___~~------------------
-```
-
-+ Stop Miner(We will restart Miner in next step with nohup command):
-
-```
-CTRL+C 
-```
 
 + Running Miner with nohup:
 
 ```console
-$ nohup HOP -p 321 2>hop.log &
+$ nohup ./HOP -p123 >hop.log 2>&1 &
 ```
 
 + Check Miner thread is running properly:
@@ -680,4 +594,4 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 $ netstat -nlp| grep HOP
 ```
 
-> Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.
+> Check Pirate Dapp to buy data from this pool and enjoy the free network.

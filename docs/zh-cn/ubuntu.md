@@ -181,16 +181,13 @@ Flags:
 
 
 ```Usage:
-Pool eth reg [flags]
+Usage:
+  Pool eth reg [flags]
 
 Flags:
-  -d, --debug             Pool eth reg -d
-  -e, --email string      Email address for user to contract
-  -h, --help              help for reg
-  -n, --name string       Pool's name to show'
-  -p, --password string   Pool's account password'
-  -t, --token int         Token number to register on system (default 102400)
-  -u, --url string        Pool's website '
+  -d, --debug       Pool eth reg -d
+  -h, --help        help for reg
+  -t, --token int   Token number to register on system (default 102400)
 ```
 
 + 查看ETH和HOP的余额

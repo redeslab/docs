@@ -1,5 +1,7 @@
 ### HOP
 
+!> HOP is now join the BNB Testnet Please check the new mining software for BNB Testnet**
+
 !> HOP is now open the second round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
 
 HOP Ropsten Token Address 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25, use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
@@ -12,8 +14,11 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 ### Download Pool and Miner
 
-+ HOP for x64
+!> New Version 1.0.0_gr Updated document [1.0.0_gr](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
 
+
+
++ HOP for x64
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
 
@@ -41,12 +46,19 @@ The Pool has compatible issue, we will release Windows version in next update.
 [HOP_win](_media/HOP_win.zip ':ignore')
 
 
++ BNB HOP for x64
+
+[Pool_amd64](_media/Pool_bnb ':ignore')
+
+[HOP_amd64](_media/HOP_bnb ':ignore')
+
+
 ### Download BAS Net-tool
 
 
 [BAS MacOS](_media/BAS_mac ':ignore')
 
-[BAS Windows](_media/BAS_win.zip ':ignore')
+[BAS Windows Old Version](_media/BAS_win.zip ':ignore')
 
 [BAS Linux](_media/BAS_amd64 ':ignore')
 

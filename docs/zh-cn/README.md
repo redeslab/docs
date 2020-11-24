@@ -1,5 +1,7 @@
 ### HOP
 
+!>HOP已经升级到1.0.0_gr版本，升级矿机和矿池之后请现在新的第三方海盗https://tsfr.io/6yyarz 来测试您的新矿池和矿机。老的HOP版本将继续支持并且运行正常，一旦您决定升级HOP请告知您的用户务必使用上面的新版本海盗。
+
 !> HOP已开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **hyperorchidcs@gmail.com** 提前申请测试需要的测试币。
 
 HOP Ropsten测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Ropsten钱包地址https://openattestation.com/docs/appendix/ropsten-setup
@@ -44,37 +46,12 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 [BAS MacOS](_media/BAS_mac ':ignore')
 
-[BAS Windows](_media/BAS_win.zip ':ignore')
+[BAS Windows老版本](_media/BAS_win.zip ':ignore')
 
 [BAS Linux](_media/BAS_amd64 ':ignore')
 
 [BAS ARM](_media/BAS_arm64 ':ignore')
 
-
-#### 查看BAS注册情况
-
-进行这一步之前请下载BAS网络工具
-
-打开命令行进入BAS所在的文件夹:
-
-+ 查询Pool的注册
-
-
-  BAS JP:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
-```
-
-
-+ 查询Miner的注册
-
-
-  BAS JP:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
-```
 
 
 ### Dapps

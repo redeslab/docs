@@ -1,6 +1,6 @@
-!> Please Use Dapp Pirate to check the version 1.0.0_gr's Pool and Miner: https://tsfr.io/6yyarz
-
 ### Download and save the file using the source file name
+
+!> Please Use Dapp Pirate to check the version 1.0.0_gr's Pool and Miner: https://tsfr.io/6yyarz
 
 ```console
 $ mkdir pool
@@ -120,13 +120,19 @@ $ vi ~/.pool/conf.json
 !>**id 1 is for the ETH Mainnet and id 3 is for the Ropsten Testnet**
 
 
-+ Register your Pool with BAS network, we use the 123 as password we create earlier:
+#### BAS Registration
+
+This step is to make HOP Global Network recongizing your server.
+
+Navigate to the fold contains BAS tool:
+
++ For Pool
 
 ```console
-$ Pool bas -b 167.179.75.39 -i YOURIPADDRESS -p 123
+$ ./Pool bas -e "your_email_address@hop.com" -n "your_pool_name" -p 123 -i your_ip_address -u http://yoursite.com
 ```
 
-+ Type your password and check success output from console:
++ Check success output from console:
 
 
 ```console
@@ -148,25 +154,13 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xa353A767087D9aCab17c3fD941eeD29e166A9982 20
+0xDfB3533df84bC4955552B55F6933AD99b429be89 20
 reg success!
 ```
 
-> 0xa353A767087D9aCab17c3fD941eeD29e166A9982 is your Pool Ropsten ETH wallet address
+> 0xDfB3533df84bC4955552B55F6933AD99b429be89 is your Pool Ropsten ETH wallet address
 
-#### BAS Registration
-
-This step is to make HOP Global Network recongizing your server.
-
-Navigate to the fold contains BAS tool:
-
-+ For Pool
-
-```console
-$ ./Pool bas -e "your_email_address@hop.com" -n "your_pool_name" -p 123 -i your_ip_address -u http://yoursite.com
-```
-
-+ BAS commands
++ Pool bas commands
 
 ```Usage:
 Flags:
@@ -300,12 +294,14 @@ register success
 
 Pirate is a cross-platform Dapp(Decentralized Application) developed in HOP protocol. Pirate is the first affiliate software whose sole goal is to provide VPN app to all users. 
 
-<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<!--<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 
 <a href="https://apps.apple.com/us/app/%E6%B5%B7%E7%9B%97vn/id1521121265?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-20&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
 
-<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a>
+<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a>*-->
+
+<a href="https://tsfr.io/6yyarz">APK</a>
 
 + BitVPN_Ubuntu successfully registered
 
@@ -414,7 +410,7 @@ $ cd hop
 $ wget https://docs.hyperorchid.org/_media/BAS_amd64
 ```
 
-+ change BAS_amd64 tp BAS and change BAS privilege
++ change BAS_amd64 to BAS and change BAS privilege
 
 ```console
 $ mv BAS_amd64 BAS
@@ -559,7 +555,7 @@ $ tail -f pool.log
 
 >>>09-13/03:08:44 miner.go:30          updateMinerData      [NOTI] update local miner data by :
 @@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
+@@PayerAddr:    0xDfB3533df84bC4955552B55F6933AD99b429be89
 @@SubAddr       HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
 @@GTN           50000000000000000000000
 @@Zone          US

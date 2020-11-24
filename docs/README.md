@@ -1,5 +1,7 @@
 ### HOP
 
+!> HOP version 1.0.0_gr has been released, please use the test dapp https://tsfr.io/6yyarz to check your HOP Pool and Miner. The old version is still working but once your Pool updated to 1.0.0_gr please let your user download this affiliate dapp and enjoin the new version of HOP.
+
 !> HOP is now join the BNB Testnet Please check the new mining software for BNB Testnet**
 
 !> HOP is now open the second round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **hyperorchidcs@gmail.com**
@@ -18,21 +20,21 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 
 
-+ HOP for x64
++ HOP for x64[version 1.0.0_gr]
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
 
 [HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
-+ HOP for ARM
++ HOP for ARM[version 1.0.0_gr]
 
 [Pool_arm64](_media/Pool_arm64 ':ignore')
 
 [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 
-+ HOP for MacOS
++ HOP for MacOS[version 1.0.0_gr]
 
 [Pool_mac](_media/Pool_mac ':ignore')
 
@@ -64,31 +66,6 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 [BAS ARM](_media/BAS_arm64 ':ignore')
 
-
-#### Check BAS registration
-
-This step uses BAS net-tool please go to docs.hyperorchid.org download the BAS for MACOS or Windows.
-
-Navigate to the fold contains BAS tool:
-
-+ For Pool
-
-
-  BAS JP:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
-```
-
-
-+ For Miner
-
-
-  BAS JP:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
-```
 
 
 ### Dapps Example

@@ -1,5 +1,7 @@
 ### 下载和安装Pool
 
+!> 请更新版本到 1.0.0_gr之后使用新的第三方海盗: https://tsfr.io/6yyarz
+
 ```console
 $ mkdir pool
 ```
@@ -40,6 +42,41 @@ export PATH
 $ source ~/.bashrc
 ```
 
+### BAS Configuration
+
+
++ 这一步是为了让HOP全球网络能识别你的新矿池:
+
+```console
+$ cd pool
+```
+
++ 下载BAS工具到pool文件夹
+
+```console
+$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+```
+
++ 改名BAS_amd64为BAS并且添加运行权限
+
+```console
+$ mv BAS_amd64 BAS
+```
+
+```console
+$ chmod +x BAS
+```
+
++ 启动BAS
+
+```console
+$ nohup ./BAS> bas.log 2>&1 &
+```
+
+!> 检查BAS是否正确启动 tail -f bas.log，日志如果没有错误，表明已经正确启动了。
+
+
+
 + 初始化Pool
 
 ```console
@@ -58,8 +95,8 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-        "version": "0.1.3",
-        "basip": "198.13.44.159",
+        "version": "1.0.0_gr",
+        "basip": "167.179.75.39",
         "web_port": 19576,
         "ethereum": {
                 "1": {
@@ -71,7 +108,7 @@ $ vi ~/.pool/conf.json
                 "3": {
                         "id": 3,
                         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x4291d9ff189d90ba875e0fc1da4d602406dd7d6e",
+                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
                         "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
                 }
         },
@@ -86,28 +123,11 @@ $ vi ~/.pool/conf.json
 ### 添加Pool的IP到HOP全球网络中
 
 
-+ 这一步是为了让HOP全球网络能识别你的新矿池:
-
-```console
-$ sudo apt-get update -y
-```
-
-```console
-$ sudo apt-get install -y net-tools
-```
-
-
-+ 查看你的公网IP地址:
-
-```console
-$ ifconfig
-```
-
 + 注册你的Pool到HOP全球网络，我们使用123作为示例密码:
 
 
 ```console
-$ Pool bas -b 198.13.44.159 -i YOURIPADDRESS -p 123
+$ ./Pool bas -e "your_email_address@hop.com" -n "your_pool_name" -p 123 -i your_ip_address -u http://yoursite.com
 ```
 
 + 查看命令行成功的提示信息:
@@ -132,47 +152,24 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xa353A767087D9aCab17c3fD941eeD29e166A9982 20
+0xDfB3533df84bC4955552B55F6933AD99b429be89 20
 reg success!
 ```
 
-> 0xa353A767087D9aCab17c3fD941eeD29e166A9982是你矿池的Ropsten钱包地址
+> 0xDfB3533df84bC4955552B55F6933AD99b429be89是你矿池的Ropsten钱包地址
 
-#### 查看HOP全球网络注册信息
++ Pool bas命令
 
-这一步使用了BAS软件，请到docs.hyperorchid.org下载该软件.
-
-进入包含BAS的文件夹:
-
-+ 查看Pool
-
-  BAS香港:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 34.96.151.222 -t1
+```Usage:
+Flags:
+  -b, --bas string        BAS IP to save and query, default from conf file
+  -e, --email string      email for contacting pool's administrator
+  -h, --help              help for bas
+  -n, --name string       pool name
+  -p, --password string   Pool's block chain password'
+  -i, --pool-ip string    Pool's ip for it's block chain address
+  -u, --url string        website address for pool
 ```
-
-  BAS日本:
-
-```console
-$ BAS query -a 0xaaab(Your Pool wallet address)-b 198.13.44.159 -t1
-```
-
-
-+ 查看矿机
-
-  BAS香港:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 34.96.151.222 -t2
-```
-
-  BAS日本:
-
-```console
-$ BAS query -a HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3(Your Miner ID) -b 198.13.44.159 -t2
-```
-
 
 ### 注册Pool
 
@@ -208,38 +205,31 @@ $ Pool eth balance -d
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
++PoolVersion:   1.0.0_gr+
 +DebugMode:     true+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xa353A767087D9aCab17c3fD941eeD29e166A9982
-main address:-> 0x0000000000000000000000000000000000000000
-payer address:-> 0x0000000000000000000000000000000000000000
-guaranteed token:-> 0
-official web:->
-pool's name:->
-pool's email:->
-hop balance:-> 200001000000000000000000
-eth balance:-> 5000000000000000000
-contract approved:-> 0
+0xDfB3533df84bC4955552B55F6933AD99b429be89
+main address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
+payer address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
 ```
 
-!>**请一定要转入足够的HOP和ETH测试币,此示例中的Pool钱包地址是 0xa353A767087D9aCab17c3fD941eeD29e166A9982**
+!>**请一定要转入足够的HOP和ETH测试币,此示例中的Pool钱包地址是 0xDfB3533df84bC4955552B55F6933AD99b429be89**
 
 + 注册Pool到Ropsten测试网
 
 ```console
-$ Pool eth reg -d -e "youremail@address.com" -n "Pool_Name" -u "https://yoursite.com"
+$ ./Pool eth reg -d -t 300
 ```
 
 + 输入你在初始化的步骤设置的Pool密码
@@ -260,7 +250,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -302,14 +292,15 @@ register success
 
 海盗是一款接入HOP协议的跨平台Dapp(去中心化app). 海盗是第一款HOP的第三方合作软件. 
 
-<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<!--<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 
 <a href="https://apps.apple.com/us/app/%E6%B5%B7%E7%9B%97vn/id1521121265?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-20&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
 
-<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a>
+<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a> -->
+<a href="https://tsfr.io/6yyarz">APK</a>
 
-+ BitVPN_Ubuntu矿池已经注册成功
++ 矿池已经注册成功
 
 **iOS**
 
@@ -335,51 +326,7 @@ systemctl disable firewalld.service
 + 运行矿池
 
 ```console
-$ Pool -d
-```
-
-```console
-conf init success
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
-+DebugMode:     true+
-+LogLevel:      INFO+
-+Token:
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+NetworkID:     3+
-+EthApiUrl:     https://ropsten.infura.io/v3/f3245cef90ed440897e43efc6b3dd0f7+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
-+Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-log init success
-
->>>05-08/03:15:04 mchain.go:104        newChain             [NOTI] Create micro chain sync worker success..[user version:0]..[miner version:0]..
-
-
->>>>>>>>>>miner pool start at pid(10823)<<<<<<<<<<
-
->>>05-08/03:15:18 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:23 local:0
-
->>>05-08/03:15:18 mchain.go:151        Syncing              [NOTI] sync user account (block:508, local:0)
-
->>>05-08/03:18:22 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:24 local:23
-```
-
-+ 停止矿池(我们会在下一步中使用nohup命令后台运行矿池):
-
-```
-CTRL+C 
-```
-
-+ 使用nohup重启矿池:
-
-
-```console
-$ nohup Pool -d -p 123 2>pool.log &
+$ nohup ./Pool -d -p123> pool.log 2>&1 &
 ```
 
 + 确认矿池已经在后台运行
@@ -449,33 +396,51 @@ $ source ~/.bashrc
 + 这一步是让HOP全球网络能发现你的矿机:
 
 ```console
-$ sudo apt-get update -y
+$ cd hop
+```
+
++ Download the BAS tool and install into your server under pool folder
+
+```console
+$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+```
+
++ 改名 BAS_amd64到BAS并且修改BAS权限
+
+```console
+$ mv BAS_amd64 BAS
 ```
 
 ```console
-$ sudo apt-get install -y net-tools
+$ chmod +x BAS
+```
+
++ 运行BAS
+
+```console
+$ nohup ./BAS> bas.log 2>&1 &
 ```
 
 + 矿机初始化:
 
 ```console
-$ HOP init
+$ ./HOP init -p 123
 ```
 
 + 打开矿机配置文件:
 
 ```console
-$ vi ~/.hop/conf.hop
+$ vi ~/.hop/conf.json
 ```
 
 + 覆盖以下信息到矿机配置文件:
 
 ```
 {
-        "BAS": "198.13.44.159",
+        "BAS": "167.179.75.39",
         "id": 3,
         "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-        "paymentService": "0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e",
+        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
         "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
 }
 ```
@@ -492,9 +457,10 @@ $ ifconfig
 + 注册你的矿机到HOP全球网络，这里我们使用123作为示例密码:
 
 ```console
-$ HOP bas -b 198.13.44.159 -m YOURIPADDRESS -p 321
+$ ./HOP bas -l "minerloc" -m your_miner_ip -p 321
 ```
 
+其中-l表示矿机的位置信息，最多可以填入八个字节，-m表示矿机的外网服务地址。
 
 + 查看命令行提示:
 
@@ -524,8 +490,9 @@ HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
 + 加入矿机到该矿池
 
 ```console
-$ Pool eth join -d -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -z "US_San1" -p 123
+$ ./Pool eth join -d -p 123 -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -t 30
 ```
+其中-s代表矿机的微支付地址，-t是指矿机需要抵押的hop币[最少30]
 
 命令行提示
 
@@ -540,7 +507,7 @@ conf init success
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
++MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -578,7 +545,7 @@ $ tail -f pool.log
 
 >>>09-13/03:08:44 miner.go:30          updateMinerData      [NOTI] update local miner data by :
 @@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
+@@PayerAddr:    0xDfB3533df84bC4955552B55F6933AD99b429be89
 @@SubAddr       HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
 @@GTN           50000000000000000000000
 @@Zone          US
@@ -589,76 +556,11 @@ $ tail -f pool.log
 
 !>**打开3000-65535 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
 
-+ 第一次运行矿机
-
-```console
-$ HOP
-```
-
-命令行提示:
-
-```console
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+WalletPath:    /root/.hop/wallet.json+
-+DBPath:        /root/.hop/Receipts+
-+LogPath:       /root/.hop/log.hop+
-+PidPath:       /root/.hop/pid.hop+
-+ConfPath:      /root/.hop/conf.hop+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+NetworkID:     3+
-+EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
-+Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Password=>
-log init success
-
->>>09-13/04:36:54 micChain.go:55       newChain             [NOTI] Sync miner data:
-@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
-@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-@@GTN           50000000000000000000000
-@@Zone          US
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
->>>>>>>>>>miner start at pid(2692)<<<<<<<<<<
-```
-
-+ 矿池Pool.log提示
-
-```console
->>>09-13/04:35:08 miner.go:30          updateMinerData      [NOTI] update local miner data by :
-@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xa353A767087D9aCab17c3fD941eeD29e166A9982
-@@SubAddr       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-@@GTN           50000000000000000000000
-@@Zone          US
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
->>>09-13/04:36:49 mchain.go:234        newRcpReader         [DEBU] RCP Keep Alive : 0xb19b231Ea69B5A2113F09Ad9AAEa0A471272140b 187.252.197.14:51569
-
->>>09-13/04:36:54 receipt.go:80        createMinerRcpWire   [NOTI] New Miner online:
-----------------------ReceiptQuery-----------------------
-Typ:    1
-UserAddr:       HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3
-PoolAddr:       0xa353A767087D9aCab17c3fD941eeD29e166A9982
------------------~~__-__-_-_-___--___-___~~------------------
-```
-
-+ 停止矿机(我们会在下一步用nohup重新启动矿机):
-
-```
-CTRL+C 
-```
 
 + 用nohup命令在后台运行矿机:
 
 ```console
-$ nohup HOP -p 321 2>hop.log &
+$ nohup ./HOP -p123 >hop.log 2>&1 &
 ```
 
 + 查看矿机运行是否正常:
@@ -680,4 +582,4 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 $ nnetstat -nlp| grep HOP
 ```
 
-> Check Pirate Dapp to buy data from BitVPN_Ubuntu pool and enjoy the free network.
+> 查看第三方dapp海盗，购买流量，享受您的网络。

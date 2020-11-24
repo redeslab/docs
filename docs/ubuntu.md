@@ -1,5 +1,6 @@
-### Download and save the file using the source file name
+!> Please Use Dapp Pirate to check the version 1.0.0_gr's Pool and Miner: https://tsfr.io/6yyarz
 
+### Download and save the file using the source file name
 
 ```console
 $ mkdir pool
@@ -93,7 +94,7 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-        "version": "0.1.3",
+        "version": "1.0.0_gr",
         "basip": "167.179.75.39",
         "web_port": 19576,
         "ethereum": {
@@ -472,6 +473,7 @@ $ ./HOP bas -l "minerloc" -m your_miner_ip -p 321
 ```
 
 !> where -l represents the location information of the miner, which can be filled in at most eight bytes, and -m represents the external network service ip address of the miner.
+
 
 + Check console output:
 

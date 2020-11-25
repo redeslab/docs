@@ -2,6 +2,8 @@
 
 
 * [Get Started](GETSTARTED.md)
+- **HOP Updates** 
+  - [Update History](/updates)
 - **Ropsten Testnet - Ubuntu** 
   - [Ubuntu 20.04](/ubuntu)
 - **BNB Testnet** 

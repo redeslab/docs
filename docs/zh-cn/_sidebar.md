@@ -1,6 +1,8 @@
 <!-- docs/_sidebar.md -->
 
 * [准备和安装](/zh-cn/GETSTARTED.md)
+- **HOP升级** 
+  - [升级历史](/zh-cn/updates)
 - **Ropsten测试网 - Ubuntu** 
   - [Ubuntu 20.04](/zh-cn/ubuntu)
 - **矿池设置**

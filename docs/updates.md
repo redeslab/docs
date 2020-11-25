@@ -1,13 +1,13 @@
 ### HOP Protocol Updates
 
-*****2020-11-24 Pool and Miner version 1.0.0_gr:*****
+> #### 2020-11-24 Pool and Miner version 1.0.0_gr:*****
 
 Micro-payment systematically reconstruction. The ETH gas fee has been reduced to 1/3 and improve the stability of transaction and increse the speed of transction.
 
 
 + Adds
 
-*Add Pool bas command, the usage of bas is listed as below:
+1. Add Pool bas command, the usage of bas is listed as below:
 		
 ```Usage:
 Usage:
@@ -23,7 +23,7 @@ Flags:
   -u, --url string        website address for pool
 ```
 
-*Add Pool show with flag allminer, alluser, conf, income and etc... please check the complete list from below:
+2. Add Pool show with flag allminer, alluser, conf, income and etc... please check the complete list from below:
 
 ```Usage:
 Usage:

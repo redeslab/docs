@@ -2,6 +2,10 @@
 
 > 2020-11-24 Pool and Miner version 1.0.0_gr:
 
++ Changes and Tutorial 
+
+[1.0.0_gr](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
+
 Micro-payment systematically reconstruction. The ETH gas fee has been reduced to 1/3 and improve the stability of transaction and increse the speed of transction.
 
 
@@ -56,4 +60,12 @@ Flags:
   -t, --token int   Token number to register on system (default 102400)
 ```
 
-2.
+2. Remove Pool eth reg flags:
+
+```Usage:
+Flags:
+  -e, --email string      Email address for user to contract
+  -n, --name string       Pool's name to show'
+  -p, --password string   Pool's account password'
+  -u, --url string        Pool's website '
+  ```

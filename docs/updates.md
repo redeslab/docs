@@ -1,6 +1,6 @@
 ### HOP Protocol Updates
 
-> #### 2020-11-24 Pool and Miner version 1.0.0_gr:*****
+> 2020-11-24 Pool and Miner version 1.0.0_gr:
 
 Micro-payment systematically reconstruction. The ETH gas fee has been reduced to 1/3 and improve the stability of transaction and increse the speed of transction.
 

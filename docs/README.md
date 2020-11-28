@@ -8,7 +8,7 @@
 
 HOP Ropsten Token Address 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25, use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
 
-> A open and decentrilized VPN protocol.
+> A open and decentrilized data and payment transfer protocol.
 
 HOP is build on Ethereum network, it uses the micro-payment system to run the pool and miners as well as the payment interface between VPN users and the pools. 
 

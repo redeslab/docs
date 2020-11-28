@@ -6,7 +6,7 @@
 
 HOP Ropsten测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Ropsten钱包地址https://openattestation.com/docs/appendix/ropsten-setup
 
-> 去中心化，开放式的VPN协议.
+> 去中心化，开放式的数据和支付协议.
 
 HOP使用区块链技术加密并且结合了微支付技术，让数据传输安全且，让支付匿名化.
 

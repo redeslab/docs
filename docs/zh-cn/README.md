@@ -69,7 +69,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="https://testflight.apple.com/join/aMDfC5cV">苹果Testflight</a>
 
-<a href="http://d.firim.vip/zy7s">中国地区安卓下载</a>
+<a href="https://tsfr.io/6yyarz">中国地区安卓下载</a>
 
 ### 使用教程
 

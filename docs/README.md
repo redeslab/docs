@@ -82,7 +82,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="https://testflight.apple.com/join/aMDfC5cV">Testflight</a>
 
-<a href="http://d.firim.vip/zy7s">APK</a>
+<a href="https://tsfr.io/6yyarz">APK</a>
 
 ### Tutorial
 

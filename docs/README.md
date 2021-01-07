@@ -127,7 +127,7 @@ Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/do
 + Get content that block in your region.
 + Enhance security level for online shopping and transaction.
 
-HOP is a anonymous VPN protocol its build-in micro-payment system provide real time payment method for VPN user through HOP ERC-20 Token.
+HOP is a anonymous web protocol its build-in micro-payment system provide real time payment method for VPN user through HOP ERC-20 Token.
 
 ### Tutorial From Third-Parties
 

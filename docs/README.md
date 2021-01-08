@@ -1,6 +1,6 @@
 ### HOP
 
-!> HOP version 1.0.0_gr has been released, please use the test dapp https://tsfr.io/6yyarz to check your HOP Pool and Miner. The old version is still working but once your Pool updated to 1.0.0_gr please let your user download this affiliate dapp and enjoin the new version of HOP.
+!> HOP version 1.0.2_gr has been released, please use the test dapp https://tsfr.io/6yyarz to check your HOP Pool and Miner. The old version is still working but once your Pool updated to 1.0.2_gr please let your user download this affiliate dapp and enjoin the new version of HOP.
 
 !> HOP is now join the BNB Testnet Please check the new mining software for BNB Testnet**
 
@@ -16,25 +16,25 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 ### Download Pool and Miner
 
-!> New Version 1.0.0_gr Updated document [1.0.0_gr](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
+!> New Version 1.0.2_gr Updated document [1.0.2_gr](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
 
 
 
-+ HOP for x64[version 1.0.0_gr]
++ HOP for x64[version 1.0.2_gr]
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
 
 [HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
-+ HOP for ARM[version 1.0.0_gr]
++ HOP for ARM[version 1.0.2_gr]
 
 [Pool_arm64](_media/Pool_arm64 ':ignore')
 
 [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 
-+ HOP for MacOS[version 1.0.0_gr]
++ HOP for MacOS[version 1.0.2_gr]
 
 [Pool_mac](_media/Pool_mac ':ignore')
 

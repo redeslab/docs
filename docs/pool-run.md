@@ -1,76 +1,22 @@
 
 ### Running Pool <!-- {docsify-ignore} -->
 
-+ Turn off Firewall:
++ Turn off Firewall(Optional):
 
 ```console
 systemctl stop firewalld.service 
 systemctl disable firewalld.service
 ```
 
-!>**Open 3000-65535 TCP,UDP**
+!>**Open 3000-65535 TCP and UDP port and BAS tcp：8854 udp: 8853**
 
 
 + Start Pool
 
 ```console
-$ Pool 
+$ nohup ./Pool -d -p123> pool.log 2>&1 &
 ```
 
-Ropsten Test Network
-
-```console
-$ Pool -d
-```
-
-```console
-conf init success
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
-+DebugMode:     true+
-+LogLevel:      INFO+
-+Token:
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+NetworkID:     3+
-+EthApiUrl:     https://ropsten.infura.io/v3/f3245cef90ed440897e43efc6b3dd0f7+
-+MicroPaySys:   0x4291d9Ff189D90Ba875E0fc1Da4D602406DD7D6e+
-+Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-+
-++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-log init success
-
->>>05-08/03:15:04 mchain.go:104        newChain             [NOTI] Create micro chain sync worker success..[user version:0]..[miner version:0]..
-
-
->>>>>>>>>>miner pool start at pid(10823)<<<<<<<<<<
-
->>>05-08/03:15:18 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:23 local:0
-
->>>05-08/03:15:18 mchain.go:151        Syncing              [NOTI] sync user account (block:508, local:0)
-
->>>05-08/03:18:22 mchain.go:142        Syncing              [NOTI] Miner data start to sync:sys:24 local:23
-```
-
-+ Stop Pool(We will restart Pool in next step with nohup command):
-
-```
-CTRL+C 
-```
-
-+ Restart Pool with nohup command:
-
-```console
-$ nohup Pool -p 123 2>pool.log &
-```
-
-Ropsten Test Network
-
-```console
-$ nohup Pool -d -p 123 2>pool.log &
-```
 
 + Make sure the Pool is running
 
@@ -83,4 +29,10 @@ Output:
 ```
 hyperor+  9470  9437  0 23:07 pts/0    00:00:00 grep --color=auto Pool
 hyperor+ 23592     1  0 Jul09 ?        00:32:34 Pool -d -p 123
+```
+
++ Check ports Pool are using if you have problem register the Pool and open the ports if they are closed:
+
+```console
+$ netstat -nlp| grep Pool
 ```

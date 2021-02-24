@@ -18,29 +18,6 @@ $ wget https://docs.hyperorchid.org/_media/Pool_amd64
 $ chmod +x Pool
 ```
 
-+ 打开bashrc
-
-
-```console
-$ vi ~/.bashrc
-```
-
-+ 添加以下的信息到bashrc文件的最后一段:
-
-
-```
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin:~/hop:~/pool
-
-export PATH
-```
-
-重新加载bashrc文件让系统能辨识Pool命令：
-
-```console
-$ source ~/.bashrc
-```
 
 ### BAS Configuration
 
@@ -95,7 +72,7 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-        "version": "1.0.0_gr",
+        "version": "1.0.3m_gr",
         "basip": "167.179.75.39",
         "web_port": 42888,
         "ethereum": {
@@ -260,23 +237,6 @@ Approving ......
 
 Tx is in process: not found
 Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
 Approve success......
 registering......
 register success
@@ -323,7 +283,7 @@ systemctl disable firewalld.service
 + 运行矿池
 
 ```console
-$ nohup ./Pool -d -p123> pool.log 2>&1 &
+$ nohup ./Pool -d -p 123> pool.log 2>&1 &
 ```
 
 + 确认矿池已经在后台运行
@@ -365,28 +325,6 @@ $ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
 $ chmod +x HOP
 ```
 
-+ 打开bash文件
-
-```console
-$ vi ~/.bashrc
-```
-
-+ 添加以下的信息到bash文件的最后一段:
-
-
-```
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin:~/hop:~/pool
-
-export PATH
-```
-
-重新加载bash文件
-
-```console
-$ source ~/.bashrc
-```
 
 ### 矿机全球网络设置
 
@@ -434,11 +372,23 @@ $ vi ~/.hop/conf.json
 
 ```
 {
-        "BAS": "167.179.75.39",
-        "id": 3,
-        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
-        "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
+        "bas": "167.179.75.39",
+        "ECfg": {
+                "1": {
+                        "id": 1,
+                        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+                        "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+                        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+                },
+                "3": {
+                        "id": 3,
+                        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
+                        "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
+                }
+        },
+        "web_port": 42887,
+        "access_pub_key": null
 }
 ```
 
@@ -557,7 +507,7 @@ $ tail -f pool.log
 + 用nohup命令在后台运行矿机:
 
 ```console
-$ nohup ./HOP -p123 >hop.log 2>&1 &
+$ nohup ./HOP -p 123 >hop.log 2>&1 &
 ```
 
 + 查看矿机运行是否正常:

@@ -1,6 +1,6 @@
 ### Download and save the file using the source file name
 
-!> Please Use Dapp Pirate to check the version 1.0.0_gr's Pool and Miner: https://tsfr.io/6yyarz
+!> Please Use Dapp Pirate to check the version 1.0.3m_gr's Pool and Miner: https://tsfr.io/6yyarz
 
 ```console
 $ mkdir pool
@@ -16,30 +16,6 @@ $ wget https://docs.hyperorchid.org/_media/Pool_amd64
 
 ```console
 $ chmod +x Pool
-```
-
-+ Open bashrc
-
-
-```console
-$ vi ~/.bashrc
-```
-
-+ Add this into bash profile's last line:
-
-
-```
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin:~/hop:~/pool
-
-export PATH
-```
-
-Save the file and load the new $PATH into the current shell session using the source command:
-
-```console
-$ source ~/.bashrc
 ```
 
 
@@ -79,7 +55,7 @@ $ nohup ./BAS> bas.log 2>&1 &
 + Init Pool
 
 ```console
-$ Pool init
+$ ./Pool init
 ```
 
 > Type your own password through command line, here we use 123 as example
@@ -94,7 +70,7 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-        "version": "1.0.0_gr",
+        "version": "1.0.3m_gr",
         "basip": "167.179.75.39",
         "web_port": 42888,
         "ethereum": {
@@ -136,25 +112,25 @@ $ ./Pool bas -e "your_email_address@hop.com" -n "your_pool_name" -p 123 -i your_
 
 
 ```console
-104.207.149.75 16
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   0.1.0+
++PoolVersion:   1.0.3m_gr+
 +DebugMode:     false+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     1+
 +EthApiUrl:     https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x60eB24514eE5D5Be18685b433E5910C3205D085E+
++MicroPaySys:   0x5eC8589C8832AdE0B45C608681bbaCEF517E7caD+
 +Token: 0x1999ac2b141E6d5c4e27579b30f842078bc620b3+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xDfB3533df84bC4955552B55F6933AD99b429be89 20
+bas ip not set, use system setting ip
+0xfd3F857b882f2Ae5D8c247605a81E1350DC7D7eB 20
 reg success!
 ```
 
@@ -204,26 +180,37 @@ $ Pool eth balance -d
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   1.0.0_gr+
++PoolVersion:   1.0.3m_gr+
 +DebugMode:     true+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
++MicroPaySys:   0x72D5f9f633f537F87Ef7415B8Bdbfa438D0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 log init success
-0xDfB3533df84bC4955552B55F6933AD99b429be89
-main address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
-payer address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
+0xfd3F857b882f2Ae5D8c247605a81E1350DC7D7eB
+main address:-> 0xfd3F857b882f2Ae5D8c247605a81E1350DC7D7eB
+payer address:-> 0xfd3F857b882f2Ae5D8c247605a81E1350DC7D7eB
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
++NetworkID:     3+
++EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
++MicroPaySys:   0x72D5f9f633f537F87Ef7415B8Bdbfa438D0a1a6c+
++Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+hop balance:-> 300000000000000000000
+eth balance:-> 1000000000000000000
+contract approved:-> 0
 ```
 
-!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xDfB3533df84bC4955552B55F6933AD99b429be89**
+!>**Transfer ENOUGH ETH and HOP into your Pool wallet in this case,the wallet address is 0xfd3F857b882f2Ae5D8c247605a81E1350DC7D7eB**
 
 + Register Your Pool with Ropsten Test Network, Where -t represents the HOP value mortgaged to the contract, which must be greater than or equal to 300.
 
@@ -242,14 +229,14 @@ Password=>
 conf init success
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-+PoolVersion:   1.0.0_gr+
++PoolVersion:   1.0.3m_gr+
 +DebugMode:     true+
 +LogLevel:      INFO+
 +Token:
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +NetworkID:     3+
 +EthApiUrl:     https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20+
-+MicroPaySys:   0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c+
++MicroPaySys:   0x72D5f9f633f537F87Ef7415B8Bdbfa438D0a1a6c+
 +Token: 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25+
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 +
@@ -258,16 +245,8 @@ conf init success
 log init success
 Password=>
 Approving ......
-0xf1b76fbeb4a70b7056d6c82f46f003b6bd5949fbb71eb960c98e396b6d58f72d
+0x8227fc76c00b1f1c93a1d699f359762c66c5c6720cae875f7a4c08f7f88356e2
 
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
-Tx is in process: not found
 Tx is in process: not found
 Tx is in process: not found
 Tx is in process: not found
@@ -282,10 +261,10 @@ Tx is in process: not found
 Approve success......
 registering......
 register success
-0x991f0954b954164615a2454386dfd61174b0c0b72ede39c678989d097b2f639c
+0x9b36d5c6c267b709b6f15390a9e78a581e0bad6de17b10f2eca1a11ce6ffc15b
 ```
 
->The Registration takes up to 10-20 mins, check the Pirate Dapp or MAC OS Application to make sure your pool is appearing in the "Flow Market".
+>The Registration takes up to 10 mins, check the Pirate Dapp or MAC OS Application to make sure your pool is appearing in the "Flow Market".
 
 ### Download Pirate and check your Pool is successfully registered or not
 
@@ -313,7 +292,7 @@ Pirate is a cross-platform Dapp(Decentralized Application) developed in HOP prot
 
 ### Running Pool
 
-+ Turn off Firewall:
++ Turn off Firewall(Optional):
 
 ```console
 systemctl stop firewalld.service 
@@ -369,62 +348,6 @@ $ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
 $ chmod +x HOP
 ```
 
-+ Open bash profile
-
-```console
-$ vi ~/.bashrc
-```
-
-+ Add this into bash profile's last line:
-
-
-```
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin:~/hop:~/pool
-
-export PATH
-```
-
-Save the file and load the new $PATH into the current shell session using the source command:
-
-```console
-$ source ~/.bashrc
-```
-
-### Miner BAS Configuration
-
-+ This step is to connect the Miner with BAS network in order to have HOP protocol regonize the new Miner:
-
-
-```console
-$ cd hop
-```
-
-+ Download the BAS tool and install into your server under pool folder
-
-```console
-$ wget https://docs.hyperorchid.org/_media/BAS_amd64
-```
-
-+ change BAS_amd64 to BAS and change BAS privilege
-
-```console
-$ mv BAS_amd64 BAS
-```
-
-```console
-$ chmod +x BAS
-```
-
-+ Start the BAS
-
-```console
-$ nohup ./BAS> bas.log 2>&1 &
-```
-
-!> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.
-
 + HOP Miner Init:
 
 ```console
@@ -434,18 +357,30 @@ $ ./HOP init -p 123
 + Open Miner settings:
 
 ```console
-$ vi ~/.hop/conf.json
+$ vi ~/.hop/conf.hop
 ```
 
 + Change the settings as following:
 
 ```
 {
-        "BAS": "167.179.75.39",
-        "id": 3,
-        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
-        "token": "0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25"                                                           
+        "bas": "167.179.75.39",
+        "ECfg": {
+                "1": {
+                        "id": 1,
+                        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+                        "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+                        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+                },
+                "3": {
+                        "id": 3,
+                        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
+                        "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
+                }
+        },
+        "web_port": 42887,
+        "access_pub_key": null
 }
 ```
 
@@ -471,8 +406,8 @@ $ ./HOP bas -l "minerloc" -m your_miner_ip -p 321
 + Check console output:
 
 ```
-45.77.5.223 16
-HO7oRHWDHXZsb8WZyENSJyceY5CiviVmJ7pRQHXEqbbQR3 46
+34.96.209.214 16
+bas ip not set, use system config ip address
 reg success!
 ```
 
@@ -483,12 +418,12 @@ reg success!
 ```console
 $ HOP show address
 
-0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5
-HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo
-0x6863a62305800a1e5b6bbc4fc9549ea204786e534010cea4780d11ed0187d0b8
+0x077Cd0084A871DF5b5802Abcd08837a1C1118402
+HO9Wk5VCnaeuNFVxhbaDAQc5ZEhe4iuz45JTYCpsjbFNZM
+0x7e7c0bed340b025185ea26dc8edc3865b0bc320feb6c6266254c357f00cdb8d8
 ```
 
->0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5 is your Miner wallet address, HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo is your Miner id.
+>0x077Cd0084A871DF5b5802Abcd08837a1C1118402 is your Miner wallet address, HO9Wk5VCnaeuNFVxhbaDAQc5ZEhe4iuz45JTYCpsjbFNZM is your Miner id.
 
 
 #### - Open Your Pool Console
@@ -567,7 +502,7 @@ $ tail -f pool.log
 + Running Miner with nohup:
 
 ```console
-$ nohup ./HOP -p123 >hop.log 2>&1 &
+$ nohup ./HOP -p 123 >hop.log 2>&1 &
 ```
 
 + Check Miner thread is running properly:

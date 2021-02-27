@@ -76,7 +76,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="https://apps.apple.com/us/app/%E6%B5%B7%E7%9B%97vn/id1521121265?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-20&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
 
-<a href="https://53d12f29-ce9c-432d-9f09-67ee1c6d42f4.filesusr.com/archives/a0a63d_4371237814b5494fb2e821dfb4f52ca7.zip?dn=pirateWW.exe.zip" style="display:inline-block;overflow:hidden;background:url(https://docs.hyperorchid.org/_media/iconfinder_windows_store_334582.png) no-repeat;width:128px;height:128px;"></a>
+<a href="https://53d12f29-ce9c-432d-9f09-67ee1c6d42f4.filesusr.com/archives/a0a63d_4371237814b5494fb2e821dfb4f52ca7.zip?dn=pirateWW.exe.zip" style="display:inline-block;overflow:hidden;background:url(https://docs.hopchain.org/_media/iconfinder_windows_store_334582.png) no-repeat;width:128px;height:128px;"></a>
 
 <a href="https://53d12f29-ce9c-432d-9f09-67ee1c6d42f4.filesusr.com/archives/a0a63d_9b9bd275abde4712b97a5d180f3c7119.zip?dn=mac%20.zip">Mac OS</a>
 
@@ -104,11 +104,11 @@ $ scp HOP root@yourserverip:/root/hop
 Or use curl
 
 ```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+$ curl -o Pool "https://docs.hopchain.org/_media/Pool_amd64"
 ```
 
 ```console
-$ curl -o HOP "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ curl -o HOP "https://docs.hopchain.org/_media/HOP_amd64"
 ```
 
 ### Get Ropsten HOP Tokens

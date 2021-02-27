@@ -9,7 +9,7 @@ $ mkdir pool
 + Entering the new create pool folder and download the HOP Pool software:
 
 ```console
-$ wget https://docs.hyperorchid.org/_media/Pool_amd64
+$ wget https://docs.hopchain.org/_media/Pool_amd64
 ```
 
 + Assign permission to run Pool
@@ -31,7 +31,7 @@ $ cd pool
 + Download the BAS tool and install into your server under pool folder
 
 ```console
-$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+$ wget https://docs.hopchain.org/_media/BAS_amd64
 ```
 
 + change BAS_amd64 tp BAS and change BAS privilege
@@ -339,7 +339,7 @@ $ mkdir hop
 + Entering the new create hop folder and download the HOP Pool software:
 
 ```console
-$ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ wget "https://docs.hopchain.org/_media/HOP_amd64"
 ```
 
 + Assign permission to run Pool

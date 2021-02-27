@@ -16,7 +16,7 @@ $ cd pool
 + Download the BAS tool and install into your server under pool folder
 
 ```console
-$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+$ wget https://docs.hopchain.org/_media/BAS_amd64
 ```
 
 + change BAS_amd64 tp BAS and change BAS privilege

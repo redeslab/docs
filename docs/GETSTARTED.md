@@ -3,11 +3,11 @@
 Upload the executable file to a remote CentOS server
 
 ```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/Pool_amd64"
+$ curl -o Pool "https://docs.hopchain.org/_media/Pool_amd64"
 ```
 
 ```console
-$ curl -o Pool "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ curl -o Pool "https://docs.hopchain.org/_media/HOP_amd64"
 ```
 
 

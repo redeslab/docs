@@ -14,7 +14,7 @@ systemctl disable firewalld.service
 + Start Pool
 
 ```console
-$ nohup ./Pool -d -p123> pool.log 2>&1 &
+$ nohup ./Pool -d -p 123> pool.log 2>&1 &
 ```
 
 

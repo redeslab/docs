@@ -351,7 +351,7 @@ $ chmod +x HOP
 + HOP Miner Init:
 
 ```console
-$ ./HOP init -p 123
+$ ./HOP init -p 321
 ```
 
 + Open Miner settings:
@@ -502,7 +502,7 @@ $ tail -f pool.log
 + Running Miner with nohup:
 
 ```console
-$ nohup ./HOP -p 123 >hop.log 2>&1 &
+$ nohup ./HOP -d -p 321 >hop.log 2>&1 &
 ```
 
 + Check Miner thread is running properly:

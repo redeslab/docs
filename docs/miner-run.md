@@ -1,47 +1,13 @@
 
 ### Running Miner <!-- {docsify-ignore} -->
 
-!>**Open 3000-65535 TCP,UDP**
+!>**Open 3000-65535 TCP,UDP and BAS tcp：8854 udp: 8853**
 
-+ Warning up Miner
-
-```console
-$ HOP
-```
-
-Output:
-
-```console
->>>07-14/02:06:00 micChain.go:55       newChain             [NOTI] Sync miner data: 
-@@@@@@@@@@@@@@@@@@@@@@[Miner Data Message]@@@@@@@@@@@@@@@@@@@@@@@
-@@PayerAddr:    0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54
-@@SubAddr       HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx
-@@GTN           50000000000000000000000
-@@Zone          US
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-```
-
-+ Output from Pool.log
-
-```console
->>>07-14/02:06:00 receipt.go:109       createMinerRcpWire   [NOTI] New Miner online:
-----------------------ReceiptQuery-----------------------
-Typ:    1
-UserAddr:       HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx
-PoolAddr:       0xf8354ACf5864B88Bebf30Ea2a82b5BA05B3e8C54
------------------~~__-__-_-_-___--___-___~~------------------
-```
-
-+ Stop Miner(We will restart Miner in next step with nohup command):
-
-```
-CTRL+C 
-```
 
 + Running Miner with nohup:
 
 ```console
-$ nohup HOP -p 321 2>hop.log &
+$ nohup ./HOP -d -p 321 >hop.log 2>&1 &
 ```
 
 + Check Miner thread is running properly:
@@ -53,6 +19,14 @@ $ ps -ef|grep HOP
 Output:
 
 ```console
-hyperor+ 14763 14586  0 03:41 pts/0    00:00:00 grep --color=auto HOP
-hyperor+ 26593     1  0 Jul14 ?        00:28:13 HOP -p 321
+root        2702    2681 23 04:41 pts/2    00:00:01 HOP -p 321
+root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 ```
+
++ To make sure which TCP and UDP ports Miner are using please use following command and open the ports that Miner needed:
+
+```console
+$ netstat -nlp| grep HOP
+```
+
+> Check Pirate Dapp to buy data from this pool and enjoy the free network.

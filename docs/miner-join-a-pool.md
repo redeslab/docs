@@ -20,12 +20,12 @@ HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx
 + Join Miner to a Pool
 
 ```console
-$ Pool eth join -s HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx -z "US" -p 123
+$ ./Pool eth join -p 123 -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -t 30
 ```
 Ropsten Test Network
 
 ```console
-$ Pool eth join -d -s HO5AAw4TqjYwJsfrM5KPQdSRGgodvjk3Xghe3jNbK7Nqgx -z "US" -p 123
+$ ./Pool eth join -d -p 123 -s HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo -t 30
 ```
 
 !>**Wait untill the "join success" appeared and check the Pool with**

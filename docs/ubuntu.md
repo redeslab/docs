@@ -22,7 +22,7 @@ $ chmod +x Pool
 ### BAS Configuration
 
 
-+ This step is to connect the Pool with BAS network in order to have HOP protocol regonize your new Pool:
++ This step is to connect the Pool with BAS network in order to have HOP protocol recognize your new Pool:
 
 ```console
 $ cd pool
@@ -34,7 +34,7 @@ $ cd pool
 $ wget https://docs.hopchain.org/_media/BAS_amd64
 ```
 
-+ change BAS_amd64 tp BAS and change BAS privilege
++ change BAS_amd64 to BAS and change BAS privilege
 
 ```console
 $ mv BAS_amd64 BAS
@@ -98,7 +98,7 @@ $ vi ~/.pool/conf.json
 
 #### BAS Registration
 
-This step is to make HOP Global Network recongizing your server.
+This step is to make HOP Global Network recognizing your server.
 
 Navigate to the fold contains BAS tool:
 
@@ -153,7 +153,7 @@ Flags:
 
 Use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
 
-!> Please transfer **sufficient HOP Tokens** into yur Pool wallet by send email to hyperorchidcs@gmail.com in order to continue this step.
+!> Please transfer **sufficient HOP Tokens** into your Pool wallet by send email to hyperorchidcs@gmail.com in order to continue this step.
 
 !> Please transfer **sufficient ETH Tokens** into your Pool wallet through https://faucet.dimensions.network/ or https://faucet.metamask.io/.
 
@@ -168,7 +168,7 @@ Flags:
   -t, --token int   Token number to register on system (default 102400)
 ```
 
-+ Check ETH and HOP Blance
++ Check ETH and HOP Balance
 
 
 ```console
@@ -322,7 +322,7 @@ hyperor+  9470  9437  0 23:07 pts/0    00:00:00 grep --color=auto Pool
 hyperor+ 23592     1  0 Jul09 ?        00:32:34 Pool -d -p 123
 ```
 
-+ Check ports Pool are using if you have problem register the Pool and open the ports if they are closed:
++ Check ports that Pool are using when the Pool has problem to register and if the ports are blocked please open them through firewall or your cloud console:
 
 ```console
 $ netstat -nlp| grep Pool
@@ -473,7 +473,7 @@ join success
 0x8c3e14ce536bebc2ce5b3c98faff44d199878ffbde27f20d678a37b516bb6439
 ```
 
-!>**Wait untill the "join success" appeared and check the Pool with**
+!>**Wait until the "join success" appeared**
 
 + Check pool.log
 

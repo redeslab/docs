@@ -6,7 +6,7 @@
   - [Update History](/updates)
 - **Ropsten Testnet - Ubuntu** 
   - [Ubuntu 20.04](/ubuntu)
-<!--- **BNB Testnet** 
+<!-- **BNB Testnet** 
   - [Ubuntu 20.04](/BNBTestnet)-->
 - **Pool Configuration**
   - [Initiation](/pool-initiation)

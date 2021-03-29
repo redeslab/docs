@@ -1,6 +1,6 @@
 ### HOP
 
-!> HOP version 1.1.5 has been released, please use the test dapp https://tsfr.io/6yyarz to check your HOP Pool and Miner. The old version is still working but once your Pool updated to 1.1.5 please let your user download this affiliate dapp and enjoin the new version of HOP.
+!> HOP version 1.1.6 has been released, please use the test dapp https://tsfr.io/6yyarz to check your HOP Pool and Miner. The old version is still working but once your Pool updated to 1.1.6 please let your user download this affiliate dapp and enjoin the new version of HOP.
 
 !> HOP is now join the BNB Testnet Please check the new mining software for BNB Testnet**
 
@@ -16,25 +16,25 @@ We provide simple executable Pool and Miner files that's highly stable.
 
 ### Download Pool and Miner
 
-!> New Version 1.1.5 Updated document [1.1.5](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
+!> New Version 1.1.6 Updated document [1.1.6](_media/gasreduce_pool_1.0.0_gr.pdf ':ignore')
 
 
 
-+ HOP for x64[version 1.1.5]
++ HOP for x64[version 1.1.6]
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
 
 [HOP_amd64](_media/HOP_amd64 ':ignore')
 
 
-+ HOP for ARM[version 1.1.5]
++ HOP for ARM[version 1.1.6]
 
 [Pool_arm64](_media/Pool_arm64 ':ignore')
 
 [HOP_arm64](_media/HOP_arm64 ':ignore')
 
 
-+ HOP for MacOS[version 1.1.5]
++ HOP for MacOS[version 1.1.6]
 
 [Pool_mac](_media/Pool_mac ':ignore')
 
@@ -80,7 +80,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="https://53d12f29-ce9c-432d-9f09-67ee1c6d42f4.filesusr.com/archives/a0a63d_9b9bd275abde4712b97a5d180f3c7119.zip?dn=mac%20.zip">Mac OS</a>
 
-<a href="https://testflight.apple.com/join/aMDfC5cV">Testflight</a>
+<a href="https://testflight.apple.com/join/IOce9kP1">Testflight</a>
 
 <a href="https://tsfr.io/6yyarz">APK</a>
 
@@ -90,26 +90,6 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="">iOS(Coming Up Soon...)</a>
 
-### Installation
-To install the executable Pool and Miner
-
-```console
-$ scp Pool root@yourserverip:/root/pool
-```
-
-```console
-$ scp HOP root@yourserverip:/root/hop
-```
-
-Or use curl
-
-```console
-$ curl -o Pool "https://docs.hopchain.org/_media/Pool_amd64"
-```
-
-```console
-$ curl -o HOP "https://docs.hopchain.org/_media/HOP_amd64"
-```
 
 ### Get Ropsten HOP Tokens
 

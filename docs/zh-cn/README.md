@@ -2,7 +2,7 @@
 
 !>HOP已经升级到1.1.6版本，升级矿机和矿池之后请现在新的第三方海盗https://tsfr.io/6yyarz 来测试您的新矿池和矿机。老的HOP版本将继续支持并且运行正常，一旦您决定升级HOP请告知您的用户务必使用上面的新版本海盗。
 
-!> HOP已开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **hyperorchidcs@gmail.com** 提前申请测试需要的测试币。
+!> HOP已开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **info@hopchain.org** 提前申请测试需要的测试币。
 
 HOP Ropsten测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Ropsten钱包地址https://openattestation.com/docs/appendix/ropsten-setup
 

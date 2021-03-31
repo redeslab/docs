@@ -95,7 +95,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 During the Beta testing period, each Pool requests a deposit of 300 HOP tokens from Ropsten testnet. Each Miner will request 300 HOP tokens from the Pool, so 300 HOP tokens can have 10 Miners.
 
-Please send your Ropsten wallet address along with your Pool IP address to hyperorchidcs@gmail.com to request the deposit token for Pool.
+Please send your Ropsten wallet address along with your Pool IP address to info@hopchain.org to request the deposit token for Pool.
 
 Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/docs/appendix/ropsten-setup
 

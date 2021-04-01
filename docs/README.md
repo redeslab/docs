@@ -4,7 +4,7 @@
 
 !> HOP is now join the BNB Testnet Please check the new mining software for BNB Testnet**
 
-!> HOP is now open the second round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **info@hopchain.org**
+!> HOP is now open the second round of beta testing opportunities for mining Pool and Miner nodes, the executable Pool and Miner can be found section below. Please request your Ropsten testnet HOP Token ahead by send email to **cs@hopchain.org**
 
 HOP Ropsten Token Address 0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25, use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
 
@@ -95,7 +95,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 During the Beta testing period, each Pool requests a deposit of 300 HOP tokens from Ropsten testnet. Each Miner will request 300 HOP tokens from the Pool, so 300 HOP tokens can have 10 Miners.
 
-Please send your Ropsten wallet address along with your Pool IP address to info@hopchain.org to request the deposit token for Pool.
+Please send your Ropsten wallet address along with your Pool IP address to cs@hopchain.org to request the deposit token for Pool.
 
 Create Ropsten wallet with Metamask Chrome plugin https://openattestation.com/docs/appendix/ropsten-setup
 

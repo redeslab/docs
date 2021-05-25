@@ -172,7 +172,7 @@ Flags:
 
 
 ```console
-$ Pool eth balance -d
+$ ./Pool eth balance -d
 ```
 
 

@@ -416,7 +416,7 @@ reg success!
 + Find your Miner wallet address
 
 ```console
-$ HOP show address
+$ ./HOP show address
 
 0x077Cd0084A871DF5b5802Abcd08837a1C1118402
 HO9Wk5VCnaeuNFVxhbaDAQc5ZEhe4iuz45JTYCpsjbFNZM

@@ -1,18 +1,18 @@
 ### HOP
 
-!>HOP已经升级到1.1.6版本，升级矿机和矿池之后请现在新的第三方海盗https://tsfr.io/6yyarz 来测试您的新矿池和矿机。老的HOP版本将继续支持并且运行正常，一旦您决定升级HOP请告知您的用户务必使用上面的新版本海盗。
+!>中文版本HOP协议是为中国大陆地区特殊定制的，该协议目前部署于以太ribkeby测试网。
 
 !> HOP已开放矿池和矿机的第一轮测试，矿机和矿池软件同步放出，请发邮件到 **cs@hopchain.org** 提前申请测试需要的测试币。
 
-HOP Ropsten测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Ropsten钱包地址https://openattestation.com/docs/appendix/ropsten-setup
+HOP Rinkeby测试网ERC20合约地址0xAd44c8493dE3FE2B070f33927A315b50Da9a0e25， 使用Metamask创建Rinkeby钱包地址https://openattestation.com/docs/appendix/ropsten-setup
 
 > 去中心化，开放式的数据和支付协议.
 
 HOP使用区块链技术加密并且结合了微支付技术，让数据传输安全且，让支付匿名化.
 
-### 下载1.1.6版本Pool和Miner
+### 下载1.1.6版本Pool和Miner(即将开放)
 
-+ HOP for x64
+<!-- + HOP for x64
 
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
@@ -52,7 +52,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 [BAS ARM](_media/BAS_arm64 ':ignore')
 
-
+-->
 
 ### Dapps
 
@@ -104,26 +104,14 @@ $ scp HOP root@yourserverip:/root/hop
 $ curl -o HOP "https://docs.hopchain.org/_media/HOP_amd64"
 ```
 
-### 获得Ropsten HOP测试币
+### 获得Rinkeby HOP测试币
 
-在Beta测试期间，每个矿池都能申请Ropsten测试网的300万HOP的抵押。 每个矿工将从池中请求30个HOP，因此300 HOP可以拥有10个矿工。
+在Beta测试期间，每个矿池都能申请Rinkeby测试网的300万HOP的抵押。 每个矿工将从池中请求30个HOP，因此300 HOP可以拥有10个矿工。
 
-请将您的Ropsten钱包地址和您的Pool IP地址发送到 hyperorchidcs@gmail.com，以获得Pool的20万HOP抵押。
+请将您的Rinkeby钱包地址和您的Pool IP地址发送到 cs@hopchain.org，以获得Pool的20万HOP抵押。
 
-创建Ropsten的以太坊钱包和如何使用Metamask钱包插件 https://openattestation.com/docs/appendix/ropsten-setup
+创建Rinkeby的以太坊钱包和如何使用Metamask钱包插件 https://medium.com/@mail.bahurudeen/setup-a-metamask-ethereum-wallet-and-use-it-to-send-and-receive-ether-4f3b99360e4f
 
-### 使用场景
-
-+在不同国家/地区观看Netflix
-
-+更改IP地址
-
-+获取您所在地区被封锁的内容
-
-+增强在线购物和交易的安全级别
-
-
-HOP是一种匿名VPN协议，其内置的小额支付系统通过HOP ERC-20 Token为VPN用户提供实时支付。
 
 ### Telegram
 ?> 加入我们的电报群 *[@hyperorchid ](https://t.me/hopcommunity)*

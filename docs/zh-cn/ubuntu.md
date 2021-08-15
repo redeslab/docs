@@ -1,6 +1,6 @@
 ### 下载和安装Pool
 
-!> 请更新版本到 1.0.0_gr之后使用新的第三方海盗: https://tsfr.io/6yyarz
+<!-- !> 请更新版本到 1.0.0_gr之后使用新的流量加速软件: https://tsfr.io/6yyarz -->
 
 ```console
 $ mkdir pool
@@ -9,7 +9,7 @@ $ mkdir pool
 + 进入新建的文件夹并且下载HOP Pool:
 
 ```console
-$ wget https://docs.hyperorchid.org/_media/Pool_amd64
+$ wget https://docs.hopchain.org/_media/Pool_amd64
 ```
 
 + 添加Pool的可执行权限
@@ -31,7 +31,7 @@ $ cd pool
 + 下载BAS工具到pool文件夹
 
 ```console
-$ wget https://docs.hyperorchid.org/_media/BAS_amd64
+$ wget https://docs.hopchain.org/_media/BAS_amd64
 ```
 
 + 改名BAS_amd64为BAS并且添加运行权限
@@ -57,7 +57,7 @@ $ nohup ./BAS> bas.log 2>&1 &
 + 初始化Pool
 
 ```console
-$ Pool init
+$ ./Pool init
 ```
 
 > 在命令行里面输入你想设置的密码，这里我们用123作为例子
@@ -150,11 +150,11 @@ Flags:
 
 ### 注册Pool
 
-使用Metamask谷歌或者火狐插件创建Ropsten钱包 https://openattestation.com/docs/appendix/ropsten-setup
+使用Metamask谷歌或者火狐插件创建Ropsten钱包 https://medium.com/@mail.bahurudeen/setup-a-metamask-ethereum-wallet-and-use-it-to-send-and-receive-ether-4f3b99360e4f
 
-!> 请转入**足够的HOP**到你的Pool钱包地址,请发送电子邮件到 hyperorchidcs@gmail.com 申请HOP测试币以便完成以下步骤.
+!> 请转入**足够的HOP**到你的Pool钱包地址,请发送电子邮件到 cs@hopchain.org 申请HOP测试币以便完成以下步骤.
 
-!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.dimensions.network/ 或者 https://faucet.metamask.io/ 申请ETH测试币.
+!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.rinkeby.io/ 或者 https://rinkeby.faucet.epirus.io/ 申请ETH测试币.
 
 
 ```Usage:
@@ -200,7 +200,7 @@ payer address:-> 0xDfB3533df84bC4955552B55F6933AD99b429be89
 
 !>**请一定要转入足够的HOP和ETH测试币,此示例中的Pool钱包地址是 0xDfB3533df84bC4955552B55F6933AD99b429be89**
 
-+ 注册Pool到Ropsten测试网
++ 注册Pool到Rinkeby测试网
 
 ```console
 $ ./Pool eth reg -d -t 300
@@ -243,7 +243,7 @@ register success
 0x991f0954b954164615a2454386dfd61174b0c0b72ede39c678989d097b2f639c
 ```
 
->注册矿池可能需要10-20分钟, 查看海盗Dapp或者MACOS的客户端确认你的矿池是否出现在"矿池"或者“流量市场”.
+>注册矿池可能需要5-10分钟, 查看海盗Dapp或者MACOS的客户端确认你的矿池是否出现在"矿池"或者“流量市场”.
 
 ### 下载海盗以便确认你的矿池是否注册成功
 
@@ -316,44 +316,13 @@ $ mkdir hop
 + 进入新建的hop文件夹并且下载矿机软件:
 
 ```console
-$ wget "https://docs.hyperorchid.org/_media/HOP_amd64"
+$ wget "https://docs.hopchain.org/_media/HOP_amd64"
 ```
 
 + 给矿机软件添加可执行权限
 
 ```console
 $ chmod +x HOP
-```
-
-
-### 矿机全球网络设置
-
-+ 这一步是让HOP全球网络能发现你的矿机:
-
-```console
-$ cd hop
-```
-
-+ Download the BAS tool and install into your server under pool folder
-
-```console
-$ wget https://docs.hyperorchid.org/_media/BAS_amd64
-```
-
-+ 改名 BAS_amd64到BAS并且修改BAS权限
-
-```console
-$ mv BAS_amd64 BAS
-```
-
-```console
-$ chmod +x BAS
-```
-
-+ 运行BAS
-
-```console
-$ nohup ./BAS> bas.log 2>&1 &
 ```
 
 + 矿机初始化:
@@ -401,7 +370,7 @@ $ vi ~/.hop/conf.json
 $ ifconfig
 ```
 
-+ 注册你的矿机到HOP全球网络，这里我们使用123作为示例密码:
++ 注册你的矿机到HOP全球网络"minerloc"可以根据你的地点来更改，这里我们使用123作为示例密码:
 
 ```console
 $ ./HOP bas -l "minerloc" -m your_miner_ip -p 321
@@ -529,4 +498,4 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 $ nnetstat -nlp| grep HOP
 ```
 
-> 查看第三方dapp海盗，购买流量，享受您的网络。
+> 查看流量app，购买流量，享受您的网络。

@@ -274,8 +274,6 @@ systemctl stop firewalld.service
 systemctl disable firewalld.service
 ```
 
-!>**打开3000-65535的TCP和UDP端口,打开BAS端口tcp：8854和udp: 8853**
-
 
 + 运行矿池
 
@@ -301,6 +299,8 @@ hyperor+ 23592     1  0 Jul09 ?        00:32:34 Pool -d -p 123
 ```console
 $ netstat -nlp| grep Pool
 ```
+
+!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
 
 ### 矿机安装及初始化
 
@@ -467,8 +467,6 @@ $ tail -f pool.log
 
 ### 运行矿机
 
-!>**打开3000-65535 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
-
 
 + 用nohup命令在后台运行矿机:
 
@@ -494,5 +492,8 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 ```console
 $ nnetstat -nlp| grep HOP
 ```
+
+!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
+
 
 > 查看流量app，购买流量，享受您的网络。

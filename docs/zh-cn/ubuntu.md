@@ -1,6 +1,6 @@
 ### 下载和安装Pool
 
-<!-- !> 请更新版本到 1.0.0_gr之后使用新的流量加速软件: https://tsfr.io/6yyarz -->
+!> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请300个HOP测试币
 
 ```console
 $ mkdir pool
@@ -72,30 +72,27 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-        "version": "1.0.3m_gr",
-        "basip": "167.179.75.39",
-        "web_port": 42888,
-        "ethereum": {
-                "1": {
-                        "id": 1,
-                        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x60eb24514ee5d5be18685b433e5910c3205d085e",
-                        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
-                },
-                "3": {
-                        "id": 3,
-                        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
-                        "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
-                }
-        },
-        "access_pub_key": [
-                "0x52B65e5a662D330f259f4161Efb2eF4034365914"
-        ]
+  "bas": "119.120.92.235",
+  "ECfg": {
+    "1": {
+      "id": 1,
+      "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+      "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+      "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+    },
+    "3": {
+      "id": 3,
+      "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+      "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
+      "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
+    }
+  },
+  "web_port": 42887,
+  "access_pub_key": null
 }
 ```
 
-!>**id 1是以太主网，id 3是Ropsten测试网**
+!>**id 1是以太主网，id 3是Rinkeby测试网**
 
 ### 添加Pool的IP到HOP全球网络中
 
@@ -171,7 +168,7 @@ Flags:
 
 
 ```console
-$ Pool eth balance -d
+$ ./Pool eth balance -d
 ```
 
 
@@ -245,11 +242,11 @@ register success
 
 >注册矿池可能需要5-10分钟, 查看海盗Dapp或者MACOS的客户端确认你的矿池是否出现在"矿池"或者“流量市场”.
 
-### 下载海盗以便确认你的矿池是否注册成功
+### 下载流量App以便确认你的矿池是否注册成功
 
-海盗是一款接入HOP协议的跨平台Dapp(去中心化app). 海盗是第一款HOP的第三方合作软件. 
+<!--海盗是一款接入HOP协议的跨平台Dapp(去中心化app). 海盗是第一款HOP的第三方合作软件. 
 
-<!--<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+<a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
 
 
 <a href="https://apps.apple.com/us/app/%E6%B5%B7%E7%9B%97vn/id1521121265?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-20&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
@@ -341,23 +338,23 @@ $ vi ~/.hop/conf.json
 
 ```
 {
-        "bas": "167.179.75.39",
-        "ECfg": {
-                "1": {
-                        "id": 1,
-                        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
-                        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
-                },
-                "3": {
-                        "id": 3,
-                        "apiUrl": "https://ropsten.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-                        "paymentService": "0x72d5f9f633f537f87ef7415b8bdbfa438d0a1a6c",
-                        "token": "0xad44c8493de3fe2b070f33927a315b50da9a0e25"
-                }
-        },
-        "web_port": 42887,
-        "access_pub_key": null
+  "version": "1.1.7",
+  "basip": "192.168.100.104",
+  "web_port": 42888,
+  "ethereum": {
+    "1": {
+      "id": 1,
+      "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+      "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+      "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+    },
+    "3": {
+      "id": 3,
+      "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+      "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
+      "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
+    }
+  }
 }
 ```
 

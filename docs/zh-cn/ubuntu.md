@@ -72,23 +72,23 @@ $ vi ~/.pool/conf.json
 
 ```
 {
-  "bas": "119.120.92.235",
-  "ECfg": {
-    "1": {
-      "id": 1,
-      "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-      "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
-      "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
-    },
-    "3": {
-      "id": 3,
-      "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-      "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
-      "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
+  "version": "1.1.7",
+    "basip": "192.168.100.104",
+    "web_port": 42888,
+    "ethereum": {
+      "1": {
+        "id": 1,
+        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+        "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+      },
+      "3": {
+        "id": 3,
+        "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+        "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
+        "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
+      }
     }
-  },
-  "web_port": 42887,
-  "access_pub_key": null
 }
 ```
 
@@ -251,8 +251,8 @@ register success
 
 <a href="https://apps.apple.com/us/app/%E6%B5%B7%E7%9B%97vn/id1521121265?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-07-20&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
 
-<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a> -->
-<a href="https://tsfr.io/6yyarz">APK</a>
+<a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/archives/a0a63d_7316ae011f0e4770878192986ab1d832.zip">Mac OS</a> 
+<a href="https://tsfr.io/6yyarz">APK</a>-->
 
 + 矿池已经注册成功
 
@@ -338,23 +338,23 @@ $ vi ~/.hop/conf.json
 
 ```
 {
-  "version": "1.1.7",
-  "basip": "192.168.100.104",
-  "web_port": 42888,
-  "ethereum": {
-    "1": {
-      "id": 1,
-      "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-      "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
-      "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+  "bas": "119.120.92.235",
+    "ECfg": {
+      "1": {
+        "id": 1,
+        "apiUrl": "https://mainnet.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+        "paymentService": "0x5ec8589c8832ade0b45c608681bbacef517e7cad",
+        "token": "0x1999ac2b141e6d5c4e27579b30f842078bc620b3"
+      },
+      "3": {
+        "id": 3,
+        "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
+        "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
+        "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
+      }
     },
-    "3": {
-      "id": 3,
-      "apiUrl": "https://rinkeby.infura.io/v3/d64d364124684359ace20feae1f9ac20",
-      "paymentService": "0xb7b93d75690C4d1E8110D8D86b09Ff43BcA4335a",
-      "token": "0x72F391A5fC31b026739C8C26e0c5C01b2783F786"
-    }
-  }
+    "web_port": 42887,
+    "access_pub_key": null
 }
 ```
 

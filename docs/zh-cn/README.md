@@ -12,7 +12,7 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 
 ### 下载Pool和Miner(即将开放)
 
-<!-- + HOP for x64
++ HOP for x64
 
 
 [Pool_amd64](_media/Pool_amd64 ':ignore')
@@ -54,7 +54,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 
 
-### Dapps
+<!--### Dapps
 
 
 <a href='https://play.google.com/store/apps/details?id=com.hop.pirate&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="width:135px;height:40px;display: inline-block;"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
@@ -81,7 +81,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 ### 获得Rinkeby HOP测试币
 
-在Beta测试期间，每个矿池都能申请Rinkeby测试网的300万HOP的抵押。 每个矿工将从池中请求30个HOP，因此300 HOP可以拥有10个矿工。
+在Beta测试期间，每个矿池都能申请Rinkeby测试网的1000HOP的抵押。 每个矿工将从池中请求30个HOP，因此1000 HOP可以拥有33个矿工。
 
 请将您的Rinkeby钱包地址和您的Pool IP地址发送到 cs@hopchain.org，以获得Pool的1000 HOP抵押。
 

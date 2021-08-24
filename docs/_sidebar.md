@@ -6,7 +6,7 @@
   - [Update History](/updates)
 - **Ropsten Testnet - Ubuntu** 
   - [Ubuntu 20.04](/ubuntu)
-<!--- **Pool Configuration**
+<!-- - **Pool Configuration**
   - [Initiation](/pool-initiation)
   - [Bas configuration](/pool-bas-configuration)
   - [Transfer Tokens](/pool-transfer-eth-hop)

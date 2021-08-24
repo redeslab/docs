@@ -6,7 +6,7 @@
   - [Update History](/updates)
 - **Ropsten Testnet - Ubuntu** 
   - [Ubuntu 20.04](/ubuntu)
-- **Pool Configuration**
+<!--- **Pool Configuration**
   - [Initiation](/pool-initiation)
   - [Bas configuration](/pool-bas-configuration)
   - [Transfer Tokens](/pool-transfer-eth-hop)
@@ -19,7 +19,7 @@
   - [Initiation](/miner-initiation)
   - [Bas configuration](/miner-bas-configuration)
   - [Join a Pool](/miner-join-a-pool)
-  - [Running](/miner-run)
+  - [Running](/miner-run)-->
 - **Command and Option**
   - [Pool](/pool-command-option)
   - [Miner](/miner-command-option)

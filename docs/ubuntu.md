@@ -153,7 +153,7 @@ Flags:
 
 Use Metamask Chrome or Firefox extension to create Ropsten wallet https://openattestation.com/docs/appendix/ropsten-setup
 
-!> Please transfer **sufficient HOP Tokens** into your Pool wallet by send email to hyperorchidcs@gmail.com in order to continue this step.
+!> Please transfer **sufficient HOP Tokens** into your Pool wallet by send email to cs@hopchain.org in order to continue this step.
 
 !> Please transfer **sufficient ETH Tokens** into your Pool wallet through https://faucet.dimensions.network/ or https://faucet.metamask.io/.
 

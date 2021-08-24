@@ -51,6 +51,7 @@ $ nohup ./BAS> bas.log 2>&1 &
 ```
 
 !> 检查BAS是否正确启动 tail -f bas.log，日志如果没有错误，表明已经正确启动了。
+!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
 
 
 

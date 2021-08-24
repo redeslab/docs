@@ -51,6 +51,7 @@ $ nohup ./BAS> bas.log 2>&1 &
 ```
 
 !> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.
+!>**Open 3000-65535 TCP and UDP port and BAS tcp：8854 udp: 8853**
 
 + Init Pool
 

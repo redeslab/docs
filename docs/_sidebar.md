@@ -19,8 +19,8 @@
   - [Initiation](/miner-initiation)
   - [Bas configuration](/miner-bas-configuration)
   - [Join a Pool](/miner-join-a-pool)
-  - [Running](/miner-run)-->
-- **Command and Option**
+  - [Running](/miner-run)
+-->- **Command and Option**
   - [Pool](/pool-command-option)
   - [Miner](/miner-command-option)
 - **Awesome Dapps**

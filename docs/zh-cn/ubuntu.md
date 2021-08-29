@@ -1,6 +1,7 @@
 ### 下载和安装Pool
 
 !> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请300个HOP测试币
+!> 中文测试的APP已经发布，安卓https://www.pgyer.com/U8zM
 
 ```console
 $ mkdir pool
@@ -74,7 +75,7 @@ $ vi ~/.pool/conf.json
 ```
 {
   "version": "1.1.7",
-    "basip": "192.168.100.104",
+    "basip": "119.120.92.235",
     "web_port": 42888,
     "ethereum": {
       "1": {

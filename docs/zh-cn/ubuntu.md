@@ -390,7 +390,7 @@ reg success!
 + 查看矿机钱包地址和ID
 
 ```console
-$ HOP show address
+$ ./HOP show address
 
 0x52e41f2fcCaa02efF9DE2c71c7a1b5F2b83FBBe5
 HO82VXn1vnBfLKC6Mx92AKk2kJPJbv4mK2YJTKBWqNWKzo

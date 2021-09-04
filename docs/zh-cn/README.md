@@ -57,13 +57,18 @@ The Pool has compatible issue, we will release Windows version in next update.
 ### Dapps
 
 
-中文测试的APP已经发布，[安卓](_media/ContentNet.apk ':ignore')
+中文测试的APP已经发布
+
+[安卓](_media/ContentNet.apk ':ignore')
+
+[iOS即将更新]
+
 
 ### 使用教程
 
 <a href="https://a0a63d65-7b07-4b71-9ec7-808d96916969.usrfiles.com/ugd/a0a63d_be53657163534aaeb34fb275dfa19dda.pdf">安卓教程</a>
 
-<a href="">iOS(即将更新...)</a>
+
 
 
 

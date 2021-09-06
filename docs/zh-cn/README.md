@@ -59,7 +59,8 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 中文测试的APP已经发布
 
-[安卓](_media/ContentNet.apk ':ignore')
+<a href="https://tsfr.io/join/c2vt2r">[安卓]</a>
+
 
 [iOS即将更新]
 

@@ -2,7 +2,7 @@
 
 !> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请300个HOP测试币
 
-!> 中文测试的APP已经发布，[安卓](_media/ContentNet.apk ':ignore')
+!> 中文测试的APP已经发布，[安卓]https://tsfr.io/join/c2vt2r
 
 ```console
 $ mkdir pool

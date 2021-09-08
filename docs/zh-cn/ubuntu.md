@@ -334,7 +334,7 @@ $ ./HOP init -p 123
 + 打开矿机配置文件:
 
 ```console
-$ vi ~/.hop/conf.json
+$ vi ~/.hop/conf.hop
 ```
 
 + 覆盖以下信息到矿机配置文件:

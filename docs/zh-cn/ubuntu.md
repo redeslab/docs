@@ -1,6 +1,6 @@
 ### 下载和安装Pool
 
-!> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请300个HOP测试币
+!> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请1000个HOP测试币,矿池需要300HOP抵押，矿机需要30。
 
 !> 中文测试的APP已经发布，[安卓]https://tsfr.io/join/c2vt2r
 

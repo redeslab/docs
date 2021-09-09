@@ -93,7 +93,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 ### Get Ropsten HOP Tokens
 
-During the Beta testing period, each Pool requests a deposit of 300 HOP tokens from Ropsten testnet. Each Miner will request 300 HOP tokens from the Pool, so 300 HOP tokens can have 10 Miners.
+During the Beta testing period, each Pool requests a deposit of 300 HOP tokens from Ropsten testnet. Each Miner will request 30 HOP tokens from the Pool, so 300 HOP tokens can have 10 Miners.
 
 Please send your Ropsten wallet address along with your Pool IP address to cs@hopchain.org to request the deposit token for Pool.
 

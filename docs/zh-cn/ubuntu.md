@@ -474,7 +474,7 @@ $ tail -f pool.log
 + 用nohup命令在后台运行矿机:
 
 ```console
-$ nohup ./HOP -p 123 >hop.log 2>&1 &
+$ nohup ./HOP -d -p 321 >hop.log 2>&1 &
 ```
 
 + 查看矿机运行是否正常:

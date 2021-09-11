@@ -29,18 +29,24 @@ Flags:
 
 查看你的矿机是否和矿池在同一个内网，如果是请把矿池或者矿机安装在不同的网络环境。因为在同一个内网，矿机不能通过公网IP和矿池进行数据交流。
 
-查看你的矿机是否打开了所有必要的端口，查看端口请使用netstat -nlp| grep HOP，如果您的矿机是假设在内网路由器后面，请进入您的路由器设置端口映射（port forward）
+
+查看你的矿机是否打开了所有必要的端口，查看端口请使用netstat -nlp| grep HOP，如果您的矿机是假设在内网路由器后面，请进入您的路由器设置端口映射（port forward
+
 
 查看你的矿机是否正确注册于BAS，查看方法为进入Pool的命令行或者在矿机下载BAS客户端，使用BAS命令查询（替换掉HO开始的矿机ID）：
 ./BAS query -b 119.120.92.235 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
 如果能查询到矿机信息，你的矿池使用命令：./Pool show allminer 也能看到矿机，这说明你的矿机要么被防火墙挡住了，要么你的矿机的端口被限制了。
 
+
 > 我的矿池已经注册了，但是没有在APP中找到矿池
 
 请从https://docs.hopchain.org/#/zh-cn/ubuntu 下载ContentNet App, 该app是为中国地区特别订制的，所有Rinkeby测试网络的矿池和矿机都是架设于该网络之中。
 
+
 在矿池中查询您的BAS注册信息（把ID替换成您的矿池ID，使用./Pool eth balance -d 命令查看矿池ID）：
 ./BAS query -b 119.120.92.235 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
+
+
 如果不能查询到您的矿池，说明您的矿池要么没有注册成功，要么注册到了错误的网络中，请确认您的矿池配置文件~/.pool/conf.json和手册中的一致：
 {
   "version": "1.1.7",

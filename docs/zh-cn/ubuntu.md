@@ -4,6 +4,8 @@
 
 !> 中文测试的APP已经发布，[安卓]https://tsfr.io/join/c2vt2r
 
+!> 矿池和矿机不能存在于同一个网络环境，同一台机器或者同一个路由器后面。
+
 ```console
 $ mkdir pool
 ```
@@ -493,7 +495,7 @@ root        2711    2681  0 04:41 pts/2    00:00:00 grep --color=auto HOP
 + 使用以下命令确认所有矿机占用的端口都已经打开:
 
 ```console
-$ nnetstat -nlp| grep HOP
+$ netstat -nlp| grep HOP
 ```
 
 !>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**

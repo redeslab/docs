@@ -1,8 +1,8 @@
 <!-- docs/_sidebar.md -->
 
 * [准备和安装](/zh-cn/GETSTARTED.md)
-<!--- **HOP升级** 
-  - [升级历史](/zh-cn/updates)-->
+- **常见问题** 
+  - [矿池矿机](/zh-cn/qanda)
 - **Rinkeby测试网 - Ubuntu** 
   - [Ubuntu 20.04](/zh-cn/ubuntu)
 - **命令和选项**

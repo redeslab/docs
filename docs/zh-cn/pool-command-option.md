@@ -4,7 +4,7 @@
 
 ### Pool
 ```console
-$ Pool -h
+$ ./Pool -h
 ```
 
 ```
@@ -13,23 +13,24 @@ Usage:
   Pool [command]
 
 Available Commands:
-  bas         bas reg ip and block chain address
-  eth         operate with ethereum contract
-  help        Help about any command
-  init        init miner pool
-  show        show system settings
+  bas             bas reg ip and block chain address
+  eth             operate with ethereum contract
+  help            Help about any command
+  init            init miner pool
+  show            show system settings
+  web-access-addr show web access address
 
 Flags:
   -d, --debug             Pool -d
   -h, --help              help for Pool
   -p, --password string   Pool -p [PASSWORD]
-  -v, --version           Pool -d
+  -v, --version           Pool -v
 ```
 
 
 ### bas
 ```console
-$ Pool bas -h
+$ ./Pool bas -h
 ```
 
 ```
@@ -37,15 +38,18 @@ Usage:
   Pool bas [flags]
 
 Flags:
-  -b, --bas string        BAS IP to save and query (default "108.61.223.99")
+  -b, --bas string        BAS IP to save and query, default from conf file
+  -e, --email string      email for contacting pool's administrator
   -h, --help              help for bas
+  -n, --name string       pool name
   -p, --password string   Pool's block chain password'
-  -i, --pip string        Pool's ip for it's block chain address
+  -i, --pool-ip string    Pool's ip for it's block chain address
+  -u, --url string        website address for pool
 ```
 
 ### eth
 ```console
-$ Pool eth -h
+$ ./Pool eth -h
 ```
 
 ```
@@ -53,14 +57,19 @@ Usage:
   Pool eth [command]
 
 Available Commands:
-  balance     show current pool's basic block chain infos
-  claim       claim user's token to pool's account
-  convert     convert go string to bytes type of ethereum
-  export      export pool wallet to ethereum wallet
-  join        make miner join the pool
-  reg         register this pool to micro payment system
-  unjoin      miner exit the pool
-  unreg       unregister pool from micro payment channel
+  balance            show current pool's basic block chain infos
+  claim              claim user's token to pool's account
+  convert            convert go string to bytes type of ethereum
+  export             export pool wallet to ethereum wallet
+  gas                estimate transfer eth or token gas
+  import-private-key import private-key
+  join               make miner join the pool
+  private-key        show private-key
+  reg                register this pool to micro payment system
+  transfer           transfer eth to other account
+  transfer-token     transfer hop to other account
+  unjoin             miner exit the pool
+  unreg              unregister pool from micro payment channel
 
 Flags:
   -h, --help   help for eth
@@ -69,7 +78,7 @@ Flags:
 #### eth balance
 
 ```console
-$ Pool eth balance -h
+$ ./Pool eth balance -h
 ```
 
 ```
@@ -85,7 +94,7 @@ Flags:
 #### eth claim
 
 ```console
-$ Pool eth claim -h
+$ ./Pool eth claim -h
 ```
 
 ```
@@ -102,7 +111,7 @@ Flags:
 #### eth convert
 
 ```console
-$ Pool eth convert -h
+$ ./Pool eth convert -h
 ```
 
 ```
@@ -117,7 +126,7 @@ Flags:
 #### eth export
 
 ```console
-$ Pool eth export -h
+$ ./Pool eth export -h
 ```
 
 ```
@@ -134,7 +143,7 @@ Flags:
 #### eth join
 
 ```console
-$ Pool eth join -h
+$ ./Pool eth join -h
 ```
 
 ```
@@ -147,30 +156,28 @@ Flags:
   -p, --password string   Pool's account password'
   -s, --subAddr string    Miner's sub address
   -t, --token int         Token number to join pool for miner (default 50000)
-  -z, --zone string       Miner's zone code (default "US")
 ```
 
 #### eth reg
 
 ```console
-$ Pool eth reg -h
+$ ./Pool eth reg -h
 ```
 
 ```
 Usage:
   Pool eth reg [flags]
-
 Flags:
-  -d, --debug             Pool eth reg -d
-  -e, --email string      Email address for user to contract
-  -h, --help              help for reg
-  -n, --name string       Pool's name to show'
-  -p, --password string   Pool's account password'
-  -t, --token int         Token number to register on system (default 102400)
-  -u, --url string        Pool's website '
+  -d, --debug       Pool eth reg -d
+  -h, --help        help for reg
+  -t, --token int   Token number to register on system (default 102400)
 ```
 
 #### eth unjoin
+
+```console
+$ ./Pool eth unjoin -h
+```
 
 ```
 Usage:
@@ -186,7 +193,7 @@ Flags:
 #### eth unreg
 
 ```console
-$ Pool eth unreg -h
+$ ./Pool eth unreg -h
 ```
 
 ```
@@ -202,7 +209,7 @@ Flags:
 ### init
 
 ```console
-$ Pool init -h
+$ ./Pool init -h
 ```
 
 ```
@@ -217,7 +224,7 @@ Flags:
 ### show
 
 ```console
-$ Pool show -h
+$ ./Pool show -h
 ```
 
 ```
@@ -226,21 +233,24 @@ Usage:
 
 Available Commands:
   address     show wallet main address
-  conf        show wallet main address
-  miner       show local user account data
+  allminer    show all miner data
+  alluser     show all user data
+  conf        show system configuration address
+  income      show all income
+  miner       show miner info data
+  pool        show all pool
   receipt     show lasted receipt
+  subpool     show subscribe pool
   user        show local user account data
 
 Flags:
   -h, --help   help for show
-
-Use "Pool show [command] --help" for more information about a command.
 ```
 
 #### show address
 
 ```console
-$ Pool show address -h
+$ ./Pool show address -h
 ```
 
 ```
@@ -254,7 +264,7 @@ Flags:
 #### show conf
 
 ```console
-$ Pool show conf -h
+$ ./Pool show conf -h
 ```
 
 ```
@@ -268,7 +278,7 @@ Flags:
 #### show miner
 
 ```console
-$ Pool show miner -h
+$ ./Pool show miner -h
 ```
 
 ```
@@ -283,7 +293,7 @@ Flags:
 #### - show receipt
 
 ```console
-$ Pool show receipt -h
+$ ./Pool show receipt -h
 ```
 
 ```
@@ -298,7 +308,7 @@ Flags:
 #### show user
 
 ```console
-$ Pool show user -h
+$ ./Pool show user -h
 ```
 
 ```
@@ -309,5 +319,4 @@ Flags:
   -h, --help          help for user
   -u, --user string   User's block chain password'
 ```
-
 

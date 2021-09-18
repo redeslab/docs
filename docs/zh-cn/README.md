@@ -15,30 +15,23 @@ HOP使用区块链技术加密并且结合了微支付技术，让数据传输�
 + HOP for x64
 
 
-[Pool_amd64](_media/Pool_amd64 ':ignore')
+[Pool_amd64](_media/Pool_Rinkeby_amd64 ':ignore')
 
-[HOP_amd64](_media/HOP_amd64 ':ignore')
+[HOP_amd64](_media/HOP_Rinkeby_amd64':ignore')
 
 
 + HOP for ARM
 
-[Pool_arm64](_media/Pool_arm64 ':ignore')
+[Pool_arm64](_media/Pool_Rinkeby_arm64 ':ignore')
 
-[HOP_arm64](_media/HOP_arm64 ':ignore')
+[HOP_arm64](_media/HOP_Rinkeby_arm64 ':ignore')
 
-
-+ HOP for MacOS
-
-[Pool_mac](_media/Pool_mac ':ignore')
-
-[HOP_mac](_media/HOP_mac ':ignore')
 
 
 + HOP for Windows
 
 The Pool has compatible issue, we will release Windows version in next update.
 
-[HOP_win](_media/HOP_win.zip ':ignore')
 
 
 

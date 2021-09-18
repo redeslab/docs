@@ -232,19 +232,23 @@ Usage:
   Pool show [command]
 
 Available Commands:
-  address     show wallet main address
-  allminer    show all miner data
-  alluser     show all user data
-  conf        show system configuration address
-  income      show all income
-  miner       show miner info data
-  pool        show all pool
-  receipt     show lasted receipt
-  subpool     show subscribe pool
-  user        show local user account data
+  address       show wallet main address
+  allminer      show all miner data
+  alluser       show all user data
+  conf          show system configuration address
+  income        show all income
+  miner         show miner info data
+  miner-in-pool list all miners in pool
+  pool          show all pool
+  receipt       show lasted receipt
+  stat          show pool's user and traffic statistics
+  subpool       show subscribe pool
+  user          show local user account data
 
 Flags:
   -h, --help   help for show
+
+Use "Pool show [command] --help" for more information about a command.
 ```
 
 #### show address

@@ -13,7 +13,7 @@ $ mkdir pool
 + 进入新建的文件夹并且下载HOP Pool:
 
 ```console
-$ wget https://docs.hopchain.org/_media/Pool_amd64
+$ wget https://docs.hopchain.org/_media/Pool_Rinkeby_amd64
 ```
 
 + 添加Pool的可执行权限
@@ -318,7 +318,7 @@ $ mkdir hop
 + 进入新建的hop文件夹并且下载矿机软件:
 
 ```console
-$ wget "https://docs.hopchain.org/_media/HOP_amd64"
+$ wget "https://docs.hopchain.org/_media/HOP_Rinkeby_amd64"
 ```
 
 + 给矿机软件添加可执行权限

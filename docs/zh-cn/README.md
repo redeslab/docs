@@ -65,9 +65,9 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 查询节点流量工具
 
-[Pool_Windows](_media/PoolTool.mac ':ignore')
+[Pool_Windows](_media/PoolTool-x64.zip ':ignore')
 
-[Pool_MacOS](_media/PoolTool-x64.zip ':ignore')
+[Pool_MacOS](_media/PoolTool.mac ':ignore')
 
 
 

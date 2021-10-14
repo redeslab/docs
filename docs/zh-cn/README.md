@@ -54,8 +54,22 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 <a href="https://tsfr.io/join/c2vt2r">[安卓]</a>
 
+[ContentNet_Windows](_media/CNetwork.zip ':ignore')
 
-[iOS即将更新]
+[ContentNet_MacOS](_media/CNetwork.dmg ':ignore')
+
+
+
+### PoolTool
+
+
+查询节点流量工具
+
+[Pool_Windows](_media/PoolTool-x64.zip ':ignore')
+
+[Pool_MacOS](_media/PoolTool.mac ':ignore')
+
+
 
 
 ### 使用教程

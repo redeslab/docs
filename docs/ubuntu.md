@@ -19,7 +19,7 @@ $ chmod +x Pool
 ```
 
 
-### BAS Configuration
+<!--### BAS Configuration
 
 
 + This step is to connect the Pool with BAS network in order to have HOP protocol recognize your new Pool:
@@ -50,7 +50,7 @@ $ chmod +x BAS
 $ nohup ./BAS> bas.log 2>&1 &
 ```
 
-!> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.
+!> Check whether BAS has started tail -f bas.log correctly. If there is no error, it means it has started correctly.-->
 !>**Open 3000-65535 TCP and UDP port and BAS tcp：8854 udp: 8853**
 
 + Init Pool

@@ -158,6 +158,46 @@ Flags:
   -u, --url string        website address for pool
 ```
 
+### 检查矿机是否已经注册到BAS网络
+
+
++ 这一步是检测HOP全球网络能否识别你的新矿池:
+
+
++ 下载BAS工具到pool文件夹
+
+```console
+$ wget https://docs.hopchain.org/_media/BAS_amd64
+```
+
++ 改名BAS_amd64为BAS并且添加运行权限
+
+```console
+$ mv BAS_amd64 BAS
+```
+
+```console
+$ chmod +x BAS
+```
+!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
++ 检测矿池的BAS状态，0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f初始化时创建的矿池地址
+
+```console
+$ ./BAS query -b 34.92.151.100 -t 1 -a 0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f
+```
+
++ 以上命令会显示类似下面的信息就说明你的矿池已经被BAS网络识别到了
+
+```console
+----------------------------------------------
+ network type:  2 [1:invalid, 2:IPV4, 3:IPV6]
+ blockChain type:       1 [1:ETH, 2:HOP]
+ network address:       149.248.4.63
+ extend data:   {"main_addr":"0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f","hop_addr":"HOHct4eDniH86GKbWbs8JAaF3A36V7LmTK3ixKzks1JJN3","name":"US_LA","email":"xyz@gmail.com","url":"http://docs.hopchain.org","version":"1.1.6"}
+ ----------------------------------------------
+```
+
+
 ### 注册Pool
 
 使用Metamask谷歌或者火狐插件创建Ropsten钱包 https://medium.com/@mail.bahurudeen/setup-a-metamask-ethereum-wallet-and-use-it-to-send-and-receive-ether-4f3b99360e4f

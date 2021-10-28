@@ -1,10 +1,18 @@
 ### 下载和安装Pool
 
-!> 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请1000个HOP测试币,矿池需要300HOP抵押，矿机需要30。
+!> 前期准备
 
-!> 中文测试的APP已经发布，[安卓]https://tsfr.io/join/c2vt2r
+```console
+1. 请发邮件和你的Rinkeby测试网的钱包地址到cs@hopchain.org申请1000个HOP测试币,矿池需要300HOP抵押，矿机需要30。
+
+2. 到https://infura.io/ 申请免费的ETH API
+
+3. 下载中文测试的APP，[安卓]https://tsfr.io/join/c2vt2r
+
+```
 
 !> 矿池和矿机不能存在于同一个网络环境，同一台机器或者同一个路由器后面。
+
 
 ```console
 $ mkdir pool
@@ -54,8 +62,8 @@ $ chmod +x BAS
 $ nohup ./BAS> bas.log 2>&1 &
 ```
 
-!> 检查BAS是否正确启动 tail -f bas.log，日志如果没有错误，表明已经正确启动了。-->
-!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**
+!> 检查BAS是否正确启动 tail -f bas.log，日志如果没有错误，表明已经正确启动了。
+!>**打开相应 TCP和UDP的端口，打开BAS端口tcp：8854和udp: 8853**-->
 
 
 

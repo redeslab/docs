@@ -1,6 +1,6 @@
 ### Download and save the file using the source file name
 
-!> Please Use Dapp Pirate to check the version 1.0.3m_gr's Pool and Miner: https://tsfr.io/6yyarz
+!> Please Use Dapp Pirate to check the version 1.0.3m_gr's Pool and Miner: https://piratedownload.github.io/
 
 ```console
 $ mkdir pool

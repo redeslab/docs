@@ -86,7 +86,7 @@ $ vi ~/.pool/conf.json
 ```
 {
   "version": "1.1.7",
-    "basip": "119.120.92.235",
+    "basip": "103.192.253.122",
     "web_port": 42888,
     "ethereum": {
       "1": {

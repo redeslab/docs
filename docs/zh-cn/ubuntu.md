@@ -204,7 +204,7 @@ $ ./BAS query -b 119.120.92.235 -t 1 -a 0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE200
 
 !> 请转入**足够的HOP**到你的Pool钱包地址,请发送电子邮件到 cs@hopchain.org 申请HOP测试币以便完成以下步骤.
 
-!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucet.rinkeby.io/ 或者 https://rinkeby.faucet.epirus.io/ 申请ETH测试币.
+!> 请转入**足够的ETH测试币**到Pool地址，打开 https://faucets.chain.link/rinkeby 或者 https://faucet.rinkeby.io/ 申请ETH测试币.
 
 
 ```Usage:

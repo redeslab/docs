@@ -183,7 +183,7 @@ $ chmod +x BAS
 + 检测矿池的BAS状态，0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f初始化时创建的矿池地址
 
 ```console
-$ ./BAS query -b 119.120.92.235 -t 1 -a 0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f
+$ ./BAS query -b 103.192.253.122 -t 1 -a 0x0a58a9822B1E59c8d2c16A3f6bA1a21FEcE2004f
 ```
 
 + 以上命令会显示类似下面的信息就说明你的矿池已经被BAS网络识别到了
@@ -391,7 +391,7 @@ $ vi ~/.hop/conf.hop
 
 ```
 {
-  "bas": "119.120.92.235",
+  "bas": "103.192.253.122",
     "ECfg": {
       "1": {
         "id": 1,

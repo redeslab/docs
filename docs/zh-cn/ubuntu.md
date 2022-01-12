@@ -7,7 +7,7 @@
 
 2. 到https://infura.io/ 申请免费的ETH API
 
-3. 下载中文测试的APP，[安卓]https://tsfr.io/join/c2vt2r
+3. 下载中文测试的APP，[安卓]https://tsfr.io/join/kerscv
 
 ```
 

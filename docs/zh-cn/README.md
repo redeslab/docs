@@ -52,7 +52,7 @@ The Pool has compatible issue, we will release Windows version in next update.
 
 中文测试的APP已经发布
 
-<a href="https://tsfr.io/join/c2vt2r">[安卓]</a>
+<a href="https://tsfr.io/join/kerscv">[安卓]</a>
 
 [ContentNet_Windows](_media/CNetwork.zip ':ignore')
 

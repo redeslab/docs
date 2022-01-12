@@ -34,7 +34,7 @@ Flags:
 
 
 查看你的矿机是否正确注册于BAS，查看方法为进入Pool的命令行或者在矿机下载BAS客户端，使用BAS命令查询（替换掉HO开始的矿机ID）：
-./BAS query -b 119.120.92.235 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
+./BAS query -b 103.192.253.122 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
 如果能查询到矿机信息，你的矿池使用命令：./Pool show allminer 也能看到矿机，这说明你的矿机要么被防火墙挡住了，要么你的矿机的端口被限制了。
 
 
@@ -44,13 +44,13 @@ Flags:
 
 
 在矿池中查询您的BAS注册信息（把ID替换成您的矿池ID，使用./Pool eth balance -d 命令查看矿池ID）：
-./BAS query -b 119.120.92.235 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
+./BAS query -b 103.192.253.122 -t 2 -a HO13cKPGckPUWcDc9cD2RkCJ1CwVc7NTTq4wQMb9isvRFX
 
 
 如果不能查询到您的矿池，说明您的矿池要么没有注册成功，要么注册到了错误的网络中，请确认您的矿池配置文件~/.pool/conf.json和手册中的一致：
 {
   "version": "1.1.7",
-    "basip": "119.120.92.235",
+    "basip": "103.192.253.122",
     "web_port": 42888,
     "ethereum": {
       "1": {
